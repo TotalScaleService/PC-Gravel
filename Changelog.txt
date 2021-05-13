@@ -1,0 +1,16 @@
+2.1.0.1 - Changed the sorting for the finished tickets.  It will convert the ticket #'s to an integer and then sort them
+ORDER_BY cast(ticket as int) DESC
+
+2.1.0.2 - Changed the saving ticket section of Weigh _Ticket.PrintTicket routine to check for ticket number before saving.
+2.1.0.3 - Bug fix - 2.1.0.2 caused tickets that were edited to be assigned a new ticket number.  I made 2 changes:
+  1.  I checked to assign a new ticket number only on new tickts
+  2.  I only updated the setup table ticket number on a new ticket       save.
+2.1.0.4 - Pulled various settings off of the sqlserver and moved them to the config file.  That way each station has its own settings.
+2.2.0.0 - Updated to Crystal Reports 13.23
+2.3.0.0 - Added support for a serial Ticket printer
+2.3.1.0 - Fixed issues with Pricing, Job product deletion etc.
+2.3.2.0 - Fixed an issue where if Pricing wasn't to be printed or viewed the user could not reprint the ticket.
+2.3.3.0 - Adding support for a traffic light control to the weigh screen.{In Progress}
+2.4.0.0 - Changed Ticket #'s to numeric from string.  Still working on traffic light control.
+2.4.0.3 - Fixed an issue:  Default printer was printed to period, disreguarded what user had picked.
+        - New issue is User selected Paper Type is ignored.  Leaving Be as paper is set in report directly.

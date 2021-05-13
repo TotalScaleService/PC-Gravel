@@ -1,0 +1,12 @@
+Make a backup
+
+SQL Server Mgmt Studio - Tools - Options
+Expand Designers
+Click Table and Database Designers
+Uncheck - Prevent Saving Changes That Require the Table to be Re-Created
+
+ 
+Open a design view of the Transactions Table.
+Change Tickets from String to Int.
+Save Transactions Table.
+View top 1000 records to verify change went ok.

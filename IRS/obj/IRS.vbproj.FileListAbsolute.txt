@@ -1,0 +1,98 @@
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\IRS.exe.config
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\IRS.exe.manifest
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\IRS.application
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\IRS.exe
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\IRS.pdb
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\IRS.xml
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Account_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Add_Edit_Account.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Apply_Price_Change.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.BasicTicketInfo.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Job_Details.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Password.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Report_Preview.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Ticket_Preview.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Getting_Data.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Haulers_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Job_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Manual_Weight.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.MDIParent.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Resources.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Product_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.SetScaleConnection.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.StartUpSplashScreen.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.System_Setup.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Ticket_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Trucks_On_Hold.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Truck_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Warning_Box.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Weigh_Ticket.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.Zip_Codes.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.exe.manifest
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.application
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.exe
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.xml
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\obj\Debug\IRS.pdb
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\Ticket.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\Ticket.vb
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\BasicTicket.vb
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\Product_Report.vb
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\Report.vb
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\BasicTicket.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\Product_Report.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\Report.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\Ticket_2_Part.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\Idaho Rock and Sand\IRS\IRS\bin\Debug\Reports\Ticket_2_Part.vb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\IRS.exe.config
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.exe
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.xml
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.pdb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\BasicTicket.vb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\Product_Report.vb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\Ticket.vb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\BasicTicket.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\Product_Report.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\Ticket_2_Part.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\Ticket.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\Ticket_2_Part.vb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\IRS.exe.manifest
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\IRS.application
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\IRS.exe
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\IRS.pdb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\IRS.xml
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Account_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Add_Edit_Account.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Apply_Price_Change.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.BasicTicketInfo.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Job_Details.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Password.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Report_Preview.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Ticket_Preview.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Getting_Data.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Haulers_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Job_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Manual_Weight.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.MDIParent.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Resources.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Product_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.SetScaleConnection.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.StartUpSplashScreen.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.System_Setup.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Ticket_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Trucks_On_Hold.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Truck_List.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Warning_Box.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Weigh_Ticket.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Zip_Codes.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.exe.manifest
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.application
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\Report.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\TestReport.rpt
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\Report.vb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\bin\Debug\Reports\TestReport.vb
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Archive_Date_Range.resources
+C:\Documents and Settings\Sean\My Documents\Customers\IRS\IRS\IRS\obj\Debug\IRS.Archived_Transactions.resources

@@ -1,0 +1,396 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IRS
+</name>
+</assembly>
+<members>
+<member name="P:IRS.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IRS.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IRS.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TrucksDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.StatesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Zip_CodesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_Cities_From_Zip_CodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_Zip_CodesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_States_From_Zip_CodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TicketDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Job_ProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_TrucksDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.LAstTruckInDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.HaulerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TransactionsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobTotalsByAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductTotalsByAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobTotalsByAccount_ByDateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.SetupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ReportSetupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountsFilteredDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductsFilteredDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobsFilteredDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TrucksRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.StatesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Zip_CodesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_Cities_From_Zip_CodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_Zip_CodesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_States_From_Zip_CodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TicketRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Job_ProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_TrucksRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.LAstTruckInRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.HaulerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TransactionsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobTotalsByAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductTotalsByAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobTotalsByAccount_ByDateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.SetupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ReportSetupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountsFilteredRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductsFilteredRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobsFilteredRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TrucksRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.StatesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Zip_CodesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_Cities_From_Zip_CodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_Zip_CodesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_States_From_Zip_CodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TicketRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Job_ProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.Distinct_TrucksRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.LAstTruckInRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.HaulerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.TransactionsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobTotalsByAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductTotalsByAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobTotalsByAccount_ByDateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.SetupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ReportSetupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.AccountsFilteredRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.ProductsFilteredRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet.JobsFilteredRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.TrucksTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.StatesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.Zip_CodesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.Distinct_Cities_From_Zip_CodeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.Distinct_Zip_CodesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.Distinct_States_From_Zip_CodeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.JobTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.AccountProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.TicketTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.Job_ProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.ProductTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.Distinct_TrucksTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.LAstTruckInTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.AccountTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.HaulerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.TransactionsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.JobTotalsByAccountTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.ProductTotalsByAccountTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.JobTotalsByAccount_ByDateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:IRS.IRS_ScaleDataSetTableAdapters.SetupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+</members>
+</doc>

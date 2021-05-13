@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ErrorLog">
+</Property><Property Name="Solution File" Value="E:\Utilities\VBCode\Controls\ErrorLog\ErrorLog.sln">
+</Property><Property Name="User Options File" Value="E:\Utilities\VBCode\Controls\ErrorLog\ErrorLog.suo">
+</Property><Property Name="Date" Value="Monday, January 09, 2012">
+</Property><Property Name="Time" Value="20:15 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ErrorLog.sln" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ErrorLog.suo" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog.suo">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\ErrorLog.vbproj" Description="Project file successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\ErrorLog.vbproj">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\ErrorLog.vbproj.user" Description="Project user file successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\ErrorLog.vbproj.user">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\Error Report.designer.vb" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\Error Report.designer.vb">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\Error Report.vb" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\Error Report.vb">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\LogError.Designer.vb" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\LogError.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\LogError.vb" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\LogError.vb">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\My Project\AssemblyInfo.vb" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\My Project\Application.Designer.vb" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\My Project\Resources.Designer.vb" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\My Project\Settings.Designer.vb" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\My Project\Application.myapp" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\My Project\Settings.settings" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\Warning.bmp" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\Warning.bmp">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\Error Report.resx" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\Error Report.resx">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\My Project\Resources.resx" Description="File successfully backed up as E:\Utilities\VBCode\Controls\ErrorLog\Backup\ErrorLog\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="ErrorLog" Source="ErrorLog\ErrorLog.vbproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="ErrorLog" Source="ErrorLog\ErrorLog.vbproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="ErrorLog.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ErrorLog.sln" Description="Converted">
+</Event></UpgradeLog>

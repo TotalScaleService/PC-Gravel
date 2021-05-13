@@ -1,0 +1,20 @@
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\bin\Release\ErrorLog.dll
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\bin\Release\ErrorLog.pdb
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\bin\Release\ErrorLog.xml
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.Error_Report.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.Resources.resources
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.dll
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.xml
+C:\Documents and Settings\Sean\My Documents\Customers\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.pdb
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\bin\Release\ErrorLog.dll
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\bin\Release\ErrorLog.pdb
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\bin\Release\ErrorLog.xml
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\obj\Release\ResolveAssemblyReference.cache
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.Error_Report.resources
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.Resources.resources
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.vbproj.GenerateResource.Cache
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.dll
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.xml
+C:\Users\sean\Documents\Utilities\VBCode\Controls\ErrorLog\ErrorLog\obj\Release\ErrorLog.pdb

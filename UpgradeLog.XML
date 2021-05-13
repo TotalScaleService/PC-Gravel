@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="IRS">
+</Property><Property Name="Solution File" Value="E:\Customers\IRS\IRS\IRS 2005\IRS.sln">
+</Property><Property Name="Date" Value="Tuesday, March 06, 2012">
+</Property><Property Name="Time" Value="19:06 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="IRS.sln" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS.sln">
+</Event><Event ErrorLevel="4" Project="IRS" Source="http://go.microsoft.com/fwlink/?LinkId=159919" Description="Warning: this project requires Crystal Reports, which is no longer included with Visual Studio. Please click here for more information.">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS.vbproj" Description="Project file successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\IRS.vbproj">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS.vbproj.user" Description="Project user file successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\IRS.vbproj.user">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Account_List.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Account_List.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Account_List.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Account_List.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Add_Edit_Account.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Add_Edit_Account.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Add_Edit_Account.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Add_Edit_Account.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\ApplicationEvents.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\ApplicationEvents.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Apply Price Change.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Apply Price Change.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Apply Price Change.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Apply Price Change.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Archive Date Range.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Archive Date Range.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Archive Date Range.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Archive Date Range.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Archived Transactions.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Archived Transactions.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Archived Transactions.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Archived Transactions.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\BasicTicketInfo.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\BasicTicketInfo.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\BasicTicketInfo.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\BasicTicketInfo.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\CrystalReport.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\CrystalReport.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Job Details.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Job Details.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Job Details.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Job Details.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Password.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Password.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Password.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Password.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Report Preview.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Report Preview.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Report Preview.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Report Preview.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\Report.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\Report.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\TestReport.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\TestReport.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Setup.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Setup.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\Ticket_2_Part.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\Ticket_2_Part.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Ticket_Number.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Ticket_Number.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Ticket_Preview.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Ticket_Preview.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Ticket_Preview.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Ticket_Preview.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Getting Data.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Getting Data.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Getting Data.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Getting Data.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Haulers_List.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Haulers_List.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Haulers_List.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Haulers_List.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS_ScaleDataSet.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\IRS_ScaleDataSet.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS_ScaleDataSet.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\IRS_ScaleDataSet.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Job_List.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Job_List.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Job_List.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Job_List.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Manual Weight.designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Manual Weight.designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Manual Weight.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Manual Weight.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\MDIParent.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\MDIParent.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\MDIParent.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\MDIParent.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\My Project\AssemblyInfo.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\My Project\Application.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\My Project\Resources.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\My Project\Settings.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Product_List.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Product_List.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Product_List.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Product_List.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\SetScaleConnection.designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\SetScaleConnection.designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\SetScaleConnection.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\SetScaleConnection.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\StartUpSplashScreen.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\StartUpSplashScreen.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\StartUpSplashScreen.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\StartUpSplashScreen.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\System_Setup.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\System_Setup.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\System_Setup.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\System_Setup.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Ticket_List.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Ticket_List.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Ticket_List.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Ticket_List.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Trucks On Hold.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Trucks On Hold.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Trucks On Hold.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Trucks On Hold.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Truck_List.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Truck_List.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Truck_List.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Truck_List.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Warning Box.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Warning Box.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Warning Box.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Warning Box.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\WeightIndicator.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\WeightIndicator.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Weigh_Ticket.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Weigh_Ticket.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Weigh_Ticket.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Weigh_Ticket.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Zip_Codes.Designer.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Zip_Codes.Designer.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Zip_Codes.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Zip_Codes.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\app.config" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\app.config">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS_ScaleDataSet.xsc" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\IRS_ScaleDataSet.xsc">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS_ScaleDataSet.xsd" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\IRS_ScaleDataSet.xsd">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS_ScaleDataSet.xss" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\IRS_ScaleDataSet.xss">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\My Project\Application.myapp" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\My Project\Settings.settings" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\ClassDiagram1.cd" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\ClassDiagram1.cd">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS_TemporaryKey.pfx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\IRS_TemporaryKey.pfx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Resources\EditCodeHS.bmp" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Resources\EditCodeHS.bmp">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\BasicTicket.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\BasicTicket.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\Product_Report.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\Product_Report.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\Ticket.vb" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\Ticket.vb">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\BasicTicket.rpt" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\BasicTicket.rpt">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\Product_Report.rpt" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\Product_Report.rpt">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\Ticket_2_Part.rpt" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\Ticket_2_Part.rpt">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\Report.rpt" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\Report.rpt">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\TestReport.rpt" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\TestReport.rpt">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Reports\Ticket.rpt" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Reports\Ticket.rpt">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Resources\foldergreen.ico" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Resources\foldergreen.ico">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Resources\gravel-1-BRM.jpg" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Resources\gravel-1-BRM.jpg">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Resources\otheroptions.ico" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Resources\otheroptions.ico">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Rocks.ico" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Rocks.ico">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\TruckYellow.ico" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\TruckYellow.ico">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Account_List.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Account_List.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Add_Edit_Account.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Add_Edit_Account.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Apply Price Change.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Apply Price Change.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Archive Date Range.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Archive Date Range.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Archived Transactions.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Archived Transactions.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\BasicTicketInfo.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\BasicTicketInfo.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Job Details.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Job Details.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Password.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Password.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Report Preview.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Report Preview.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Ticket_Preview.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Ticket_Preview.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Getting Data.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Getting Data.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Haulers_List.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Haulers_List.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Job_List.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Job_List.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Manual Weight.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Manual Weight.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\MDIParent.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\MDIParent.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\My Project\Resources.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Product_List.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Product_List.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\SetScaleConnection.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\SetScaleConnection.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\StartUpSplashScreen.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\StartUpSplashScreen.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\System_Setup.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\System_Setup.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Ticket_List.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Ticket_List.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Trucks On Hold.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Trucks On Hold.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Truck_List.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Truck_List.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Warning Box.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Warning Box.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Weigh_Ticket.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Weigh_Ticket.resx">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\Zip_Codes.resx" Description="File successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\IRS\Zip_Codes.resx">
+</Event><Event ErrorLevel="1" Project="IRS" Source="IRS\IRS.vbproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IRS" Source="IRS\IRS.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Setup1.vdproj" Source="Setup1\Setup1.vdproj" Description="Project file successfully backed up as E:\Customers\IRS\IRS\IRS 2005\Backup\Setup1\Setup1.vdproj">
+</Event><Event ErrorLevel="0" Project="" Source="IRS.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="IRS.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IRS" Source="IRS\IRS.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

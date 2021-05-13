@@ -1,0 +1,210 @@
+1/24/2018 10:33:51 AM ---------------------------
+1/24/2018 10:33:51 AM Print / Save Ticket Pressed For Truck ID RED&BLACK FREIGHTLINER
+1/24/2018 10:33:51 AM  
+1/24/2018 10:33:51 AM Hold/Print Ticket entered @1/24/2018 10:33:51 AM
+1/24/2018 10:33:51 AM StoreTrucks called @ 1/24/2018 10:33:51 AM
+1/24/2018 10:33:51 AM Truck RED&BLACK FREIGHTLINER Found and On Hold = False Manual Tare = False
+1/24/2018 10:33:51 AM ** Existing Tare Weight = 23800.00
+1/24/2018 10:33:51 AM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 23800
+1/24/2018 10:33:51 AM Tare Weight = 23800 Update occurred @ 1/24/2018 10:33:51 AM
+1/24/2018 10:42:52 AM ---------------------------
+1/24/2018 10:42:52 AM Print / Save Ticket Pressed For Truck ID RED&BLACK FREIGHTLINER
+1/24/2018 10:42:52 AM  
+1/24/2018 10:42:52 AM Hold/Print Ticket entered @1/24/2018 10:42:52 AM
+1/24/2018 10:42:52 AM StoreTrucks called @ 1/24/2018 10:42:52 AM
+1/24/2018 10:42:52 AM Truck RED&BLACK FREIGHTLINER Found and On Hold = False Manual Tare = False
+1/24/2018 10:42:52 AM ** Existing Tare Weight = 23800.00
+1/24/2018 10:42:52 AM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 23800
+1/24/2018 10:42:52 AM Tare Weight = 23800 Update occurred @ 1/24/2018 10:42:52 AM
+1/25/2018 9:12:13 AM ---------------------------
+1/25/2018 9:12:13 AM Print / Save Ticket Pressed For Truck ID Ford Truck
+1/25/2018 9:12:13 AM  
+1/25/2018 9:12:13 AM Hold/Print Ticket entered @1/25/2018 9:12:13 AM
+1/25/2018 9:12:13 AM StoreTrucks called @ 1/25/2018 9:12:13 AM
+1/25/2018 9:12:13 AM Truck Ford Truck Found and On Hold = False Manual Tare = False
+1/25/2018 9:12:13 AM ** Existing Tare Weight = 16820.00
+1/25/2018 9:12:13 AM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 16820
+1/25/2018 9:12:13 AM Tare Weight = 16820 Update occurred @ 1/25/2018 9:12:13 AM
+1/25/2018 2:13:27 PM ---------------------------
+1/25/2018 2:13:27 PM Print / Save Ticket Pressed For Truck ID CREIGHTON RED TRK
+1/25/2018 2:13:27 PM  
+1/25/2018 2:13:27 PM Hold/Print Ticket entered @1/25/2018 2:13:27 PM
+1/25/2018 2:13:27 PM StoreTrucks called @ 1/25/2018 2:13:27 PM
+1/25/2018 2:14:42 PM ---------------------------
+1/25/2018 2:14:42 PM Print / Save Ticket Pressed For Truck ID CREIGHTON RED TRK
+1/25/2018 2:14:42 PM  
+1/25/2018 2:14:42 PM Hold/Print Ticket entered @1/25/2018 2:14:42 PM
+1/25/2018 2:14:42 PM StoreTrucks called @ 1/25/2018 2:14:42 PM
+1/25/2018 2:18:33 PM ---------------------------
+1/25/2018 2:18:33 PM Print / Save Ticket Pressed For Truck ID CREIGHTON RED TRK
+1/25/2018 2:18:33 PM  
+1/25/2018 2:18:33 PM Hold/Print Ticket entered @1/25/2018 2:18:33 PM
+1/25/2018 2:18:33 PM StoreTrucks called @ 1/25/2018 2:18:33 PM
+1/25/2018 2:24:15 PM ---------------------------
+1/25/2018 2:24:15 PM Print / Save Ticket Pressed For Truck ID CREIGHTON RED TRK
+1/25/2018 2:24:15 PM  
+1/25/2018 2:24:15 PM Hold/Print Ticket entered @1/25/2018 2:24:15 PM
+1/25/2018 2:24:15 PM StoreTrucks called @ 1/25/2018 2:24:15 PM
+1/26/2018 10:40:22 AM ---------------------------
+1/26/2018 10:40:22 AM Print / Save Ticket Pressed For Truck ID 7&PUP TERRA WEST
+1/26/2018 10:40:22 AM  
+1/26/2018 10:40:22 AM Hold/Print Ticket entered @1/26/2018 10:40:22 AM
+1/26/2018 10:40:22 AM StoreTrucks called @ 1/26/2018 10:40:22 AM
+1/26/2018 10:42:38 AM ---------------------------
+1/26/2018 10:42:38 AM Print / Save Ticket Pressed For Truck ID G13 T10
+1/26/2018 10:42:38 AM  
+1/26/2018 10:42:38 AM Hold/Print Ticket entered @1/26/2018 10:42:38 AM
+1/26/2018 10:42:38 AM StoreTrucks called @ 1/26/2018 10:42:38 AM
+1/26/2018 10:46:22 AM ---------------------------
+1/26/2018 10:46:22 AM Print / Save Ticket Pressed For Truck ID G14 TRUCK
+1/26/2018 10:46:22 AM  
+1/26/2018 10:46:22 AM Hold/Print Ticket entered @1/26/2018 10:46:22 AM
+1/26/2018 10:46:22 AM StoreTrucks called @ 1/26/2018 10:46:22 AM
+1/26/2018 10:47:30 AM ---------------------------
+1/26/2018 10:47:30 AM Print / Save Ticket Pressed For Truck ID G13 T10
+1/26/2018 10:47:30 AM  
+1/26/2018 10:47:30 AM Hold/Print Ticket entered @1/26/2018 10:47:30 AM
+1/26/2018 10:47:30 AM StoreTrucks called @ 1/26/2018 10:47:30 AM
+1/26/2018 11:01:03 AM ---------------------------
+1/26/2018 11:01:03 AM Print / Save Ticket Pressed For Truck ID G14 TRUCK
+1/26/2018 11:01:03 AM  
+1/26/2018 11:01:03 AM Hold/Print Ticket entered @1/26/2018 11:01:03 AM
+1/26/2018 11:01:03 AM StoreTrucks called @ 1/26/2018 11:01:03 AM
+1/26/2018 11:04:55 AM ---------------------------
+1/26/2018 11:04:55 AM Print / Save Ticket Pressed For Truck ID LIGHT BLUE KW
+1/26/2018 11:04:55 AM  
+1/26/2018 11:04:55 AM Hold/Print Ticket entered @1/26/2018 11:04:55 AM
+1/26/2018 11:04:55 AM StoreTrucks called @ 1/26/2018 11:04:55 AM
+1/26/2018 11:07:41 AM ---------------------------
+1/26/2018 11:07:41 AM Print / Save Ticket Pressed For Truck ID LIGHT BLUE KW
+1/26/2018 11:07:41 AM  
+1/26/2018 11:07:41 AM Hold/Print Ticket entered @1/26/2018 11:07:41 AM
+1/26/2018 11:07:41 AM StoreTrucks called @ 1/26/2018 11:07:41 AM
+1/26/2018 11:10:15 AM ---------------------------
+1/26/2018 11:10:15 AM Print / Save Ticket Pressed For Truck ID LIGHT BLUE KW
+1/26/2018 11:10:15 AM  
+1/26/2018 11:10:15 AM Hold/Print Ticket entered @1/26/2018 11:10:15 AM
+1/26/2018 11:10:15 AM StoreTrucks called @ 1/26/2018 11:10:15 AM
+1/26/2018 11:11:24 AM ---------------------------
+1/26/2018 11:11:24 AM Print / Save Ticket Pressed For Truck ID LIGHT BLUE KW
+1/26/2018 11:11:24 AM  
+1/26/2018 11:11:24 AM Hold/Print Ticket entered @1/26/2018 11:11:24 AM
+1/26/2018 11:11:24 AM StoreTrucks called @ 1/26/2018 11:11:24 AM
+1/26/2018 11:16:16 AM ---------------------------
+1/26/2018 11:16:16 AM Print / Save Ticket Pressed For Truck ID LIGHT BLUE KW
+1/26/2018 11:16:16 AM  
+1/26/2018 11:16:16 AM Hold/Print Ticket entered @1/26/2018 11:16:16 AM
+1/26/2018 11:16:16 AM StoreTrucks called @ 1/26/2018 11:16:16 AM
+1/26/2018 11:20:38 AM ---------------------------
+1/26/2018 11:20:38 AM Print / Save Ticket Pressed For Truck ID LIGHT BLUE KW
+1/26/2018 11:20:38 AM  
+1/26/2018 11:20:38 AM Hold/Print Ticket entered @1/26/2018 11:20:38 AM
+1/26/2018 11:20:38 AM StoreTrucks called @ 1/26/2018 11:20:38 AM
+1/26/2018 11:26:01 AM ---------------------------
+1/26/2018 11:26:01 AM Print / Save Ticket Pressed For Truck ID LIGHT BLUE KW
+1/26/2018 11:26:01 AM  
+1/26/2018 11:26:01 AM Hold/Print Ticket entered @1/26/2018 11:26:01 AM
+1/26/2018 11:26:01 AM StoreTrucks called @ 1/26/2018 11:26:01 AM
+1/26/2018 11:26:12 AM ---------------------------
+1/26/2018 11:26:12 AM Print / Save Ticket Pressed For Truck ID G14 TRUCK
+1/26/2018 11:26:12 AM  
+1/26/2018 11:26:12 AM Hold/Print Ticket entered @1/26/2018 11:26:12 AM
+1/26/2018 11:26:12 AM StoreTrucks called @ 1/26/2018 11:26:12 AM
+1/26/2018 11:26:27 AM ---------------------------
+1/26/2018 11:26:27 AM Print / Save Ticket Pressed For Truck ID G12 T4
+1/26/2018 11:26:27 AM  
+1/26/2018 11:26:27 AM Hold/Print Ticket entered @1/26/2018 11:26:27 AM
+1/26/2018 11:26:28 AM StoreTrucks called @ 1/26/2018 11:26:28 AM
+1/26/2018 3:05:20 PM ---------------------------
+1/26/2018 3:05:20 PM Print / Save Ticket Pressed For Truck ID 283325
+1/26/2018 3:05:20 PM  
+1/26/2018 3:05:20 PM Hold/Print Ticket entered @1/26/2018 3:05:20 PM
+1/26/2018 3:05:20 PM StoreTrucks called @ 1/26/2018 3:05:20 PM
+1/29/2018 2:06:54 PM ---------------------------
+1/29/2018 2:06:54 PM Print / Save Ticket Pressed For Truck ID 82 A CORE
+1/29/2018 2:06:54 PM  
+1/29/2018 2:06:54 PM Hold/Print Ticket entered @1/29/2018 2:06:54 PM
+1/29/2018 2:06:54 PM StoreTrucks called @ 1/29/2018 2:06:54 PM
+1/29/2018 2:06:54 PM Truck 82 A CORE Found and On Hold = False Manual Tare = False
+1/29/2018 2:06:54 PM ** Existing Tare Weight = 12520.00
+1/29/2018 2:06:54 PM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 12520
+1/29/2018 2:06:54 PM Tare Weight = 12520 Update occurred @ 1/29/2018 2:06:54 PM
+1/29/2018 2:13:46 PM ---------------------------
+1/29/2018 2:13:46 PM Print / Save Ticket Pressed For Truck ID 82 A CORE
+1/29/2018 2:13:46 PM  
+1/29/2018 2:13:46 PM Hold/Print Ticket entered @1/29/2018 2:13:46 PM
+1/29/2018 2:13:46 PM StoreTrucks called @ 1/29/2018 2:13:46 PM
+1/29/2018 2:13:46 PM Truck 82 A CORE Found and On Hold = False Manual Tare = False
+1/29/2018 2:13:46 PM ** Existing Tare Weight = 12520.00
+1/29/2018 2:13:46 PM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 12520
+1/29/2018 2:13:46 PM Tare Weight = 12520 Update occurred @ 1/29/2018 2:13:46 PM
+2/5/2018 10:13:43 AM ---------------------------
+2/5/2018 10:13:43 AM Print / Save Ticket Pressed For Truck ID G13 T10
+2/5/2018 10:13:43 AM  
+2/5/2018 10:13:43 AM Hold/Print Ticket entered @2/5/2018 10:13:43 AM
+2/5/2018 10:13:43 AM StoreTrucks called @ 2/5/2018 10:13:43 AM
+2/7/2018 2:05:24 PM ---------------------------
+2/7/2018 2:05:24 PM Print / Save Ticket Pressed For Truck ID 012 BELLY
+2/7/2018 2:05:24 PM  
+2/7/2018 2:05:24 PM Hold/Print Ticket entered @2/7/2018 2:05:24 PM
+2/7/2018 2:05:24 PM StoreTrucks called @ 2/7/2018 2:05:24 PM
+2/7/2018 2:05:24 PM Truck 012 BELLY Found and On Hold = False Manual Tare = False
+2/7/2018 2:05:24 PM ** Existing Tare Weight = 33860.00
+2/7/2018 2:05:24 PM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 33860
+2/7/2018 2:05:24 PM Tare Weight = 33860 Update occurred @ 2/7/2018 2:05:24 PM
+2/7/2018 2:06:10 PM ---------------------------
+2/7/2018 2:06:10 PM Print / Save Ticket Pressed For Truck ID 012 BELLY
+2/7/2018 2:06:10 PM  
+2/7/2018 2:06:10 PM Hold/Print Ticket entered @2/7/2018 2:06:10 PM
+2/7/2018 2:06:10 PM StoreTrucks called @ 2/7/2018 2:06:10 PM
+2/7/2018 2:06:10 PM Truck 012 BELLY Found and On Hold = False Manual Tare = False
+2/7/2018 2:06:10 PM ** Existing Tare Weight = 33860.00
+2/7/2018 2:06:10 PM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 33860
+2/7/2018 2:06:10 PM Tare Weight = 33860 Update occurred @ 2/7/2018 2:06:10 PM
+2/7/2018 2:11:03 PM ---------------------------
+2/7/2018 2:11:03 PM Print / Save Ticket Pressed For Truck ID 82 A CORE
+2/7/2018 2:11:03 PM  
+2/7/2018 2:11:03 PM Hold/Print Ticket entered @2/7/2018 2:11:03 PM
+2/7/2018 2:11:03 PM StoreTrucks called @ 2/7/2018 2:11:03 PM
+2/7/2018 2:11:03 PM Truck 82 A CORE Found and On Hold = False Manual Tare = False
+2/7/2018 2:11:03 PM ** Existing Tare Weight = 12520.00
+2/7/2018 2:11:03 PM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 12520
+2/7/2018 2:11:03 PM Tare Weight = 12520 Update occurred @ 2/7/2018 2:11:03 PM
+2/7/2018 2:21:33 PM ---------------------------
+2/7/2018 2:21:33 PM Print / Save Ticket Pressed For Truck ID RED&BLACK FREIGHTLINER
+2/7/2018 2:21:33 PM  
+2/7/2018 2:21:33 PM Hold/Print Ticket entered @2/7/2018 2:21:33 PM
+2/7/2018 2:23:55 PM StoreTrucks called @ 2/7/2018 2:23:53 PM
+2/7/2018 2:24:27 PM Truck RED&BLACK FREIGHTLINER Found and On Hold = False Manual Tare = False
+2/7/2018 2:24:30 PM ** Existing Tare Weight = 23800.00
+2/7/2018 2:24:45 PM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 23800
+2/7/2018 2:24:52 PM Tare Weight = 23800 Update occurred @ 2/7/2018 2:24:51 PM
+2/16/2018 11:23:02 AM ---------------------------
+2/16/2018 11:23:02 AM Print / Save Ticket Pressed For Truck ID 655/247 GREY KW W/ED 
+2/16/2018 11:23:02 AM  
+2/16/2018 11:23:02 AM Hold/Print Ticket entered @2/16/2018 11:23:02 AM
+2/16/2018 11:23:02 AM StoreTrucks called @ 2/16/2018 11:23:02 AM
+2/16/2018 11:36:25 AM ---------------------------
+2/16/2018 11:36:25 AM Print / Save Ticket Pressed For Truck ID 628/247 SLVR KW W/ED
+2/16/2018 11:36:25 AM  
+2/16/2018 11:36:25 AM Hold/Print Ticket entered @2/16/2018 11:36:25 AM
+2/16/2018 11:36:25 AM StoreTrucks called @ 2/16/2018 11:36:25 AM
+2/16/2018 11:36:25 AM Truck 628/247 SLVR KW W/ED Found and On Hold = False Manual Tare = False
+2/16/2018 11:36:25 AM ** Existing Tare Weight = 36500.00
+2/16/2018 11:36:25 AM Manual Tare is True or OnHold = False therefore Tare Weight equeals textbox value of 36500
+2/16/2018 11:36:25 AM Tare Weight = 36500 Update occurred @ 2/16/2018 11:36:25 AM
+2/22/2018 4:28:36 PM ---------------------------
+2/22/2018 4:28:36 PM Print / Save Ticket Pressed For Truck ID 651/246 LAVENDER TRK W/ED
+2/22/2018 4:28:36 PM  
+2/22/2018 4:28:36 PM Hold/Print Ticket entered @2/22/2018 4:28:36 PM
+2/22/2018 4:28:36 PM StoreTrucks called @ 2/22/2018 4:28:36 PM
+3/1/2018 8:15:57 AM ---------------------------
+3/1/2018 8:15:57 AM Print / Save Ticket Pressed For Truck ID 651/246 LAVENDER TRK W/ED
+3/1/2018 8:15:57 AM  
+3/1/2018 8:15:57 AM Hold/Print Ticket entered @3/1/2018 8:15:57 AM
+3/1/2018 8:15:57 AM StoreTrucks called @ 3/1/2018 8:15:57 AM
+3/1/2018 8:18:36 AM ---------------------------
+3/1/2018 8:18:36 AM Print / Save Ticket Pressed For Truck ID 655/247 GREY KW W/ED 
+3/1/2018 8:18:36 AM  
+3/1/2018 8:18:36 AM Hold/Print Ticket entered @3/1/2018 8:18:36 AM
+3/1/2018 8:18:36 AM StoreTrucks called @ 3/1/2018 8:18:36 AM
