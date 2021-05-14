@@ -76,3 +76,13 @@ D:\OneDrive - TOTAL SCALE SERVICE\SourceCode\PC\IRS_Version2_4_0_3\ErrorLog\Erro
 D:\OneDrive - TOTAL SCALE SERVICE\SourceCode\PC\IRS_Version2_4_0_3\ErrorLog\ErrorLog\obj\Debug\ErrorLog.xml
 D:\OneDrive - TOTAL SCALE SERVICE\SourceCode\PC\IRS_Version2_4_0_3\ErrorLog\ErrorLog\obj\Debug\ErrorLog.pdb
 D:\OneDrive - TOTAL SCALE SERVICE\SourceCode\PC\IRS_Version2_4_0_3\ErrorLog\ErrorLog\obj\Debug\ErrorLog.vbprojResolveAssemblyReference.cache
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\bin\Debug\ErrorLog.dll
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\bin\Debug\ErrorLog.pdb
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\bin\Debug\ErrorLog.xml
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\obj\Debug\ErrorLog.vbprojResolveAssemblyReference.cache
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\obj\Debug\ErrorLog.Error_Report.resources
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\obj\Debug\ErrorLog.Resources.resources
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\obj\Debug\ErrorLog.vbproj.GenerateResource.Cache
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\obj\Debug\ErrorLog.dll
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\obj\Debug\ErrorLog.xml
+C:\Users\sean\source\repos\PC-Gravel\ErrorLog\ErrorLog\obj\Debug\ErrorLog.pdb

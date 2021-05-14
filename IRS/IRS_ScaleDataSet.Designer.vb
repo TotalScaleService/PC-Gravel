@@ -5009,6 +5009,10 @@ Partial Public Class IRS_ScaleDataSet
         
         Private columnShow_Price_On_Ticket As Global.System.Data.DataColumn
         
+        Private columnEmail_Ticket As Global.System.Data.DataColumn
+        
+        Private columnEmail As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -5141,6 +5145,22 @@ Partial Public Class IRS_ScaleDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Email_TicketColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnEmail_Ticket
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property EmailColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnEmail
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -5177,9 +5197,9 @@ Partial Public Class IRS_ScaleDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddAccountRow(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal parentStatesRowByFK_Account_States As StatesRow, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Boolean, ByVal Show_Price As Boolean, ByVal Default_Hauler As String, ByVal EditBtn As String, ByVal Show_Price_On_Ticket As Boolean) As AccountRow
+        Public Overloads Function AddAccountRow(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal parentStatesRowByFK_Account_States As StatesRow, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Boolean, ByVal Show_Price As Boolean, ByVal Default_Hauler As String, ByVal EditBtn As String, ByVal Show_Price_On_Ticket As Boolean, ByVal Email_Ticket As Boolean, ByVal Email As String) As AccountRow
             Dim rowAccountRow As AccountRow = CType(Me.NewRow,AccountRow)
-            Dim columnValuesArray() As Object = New Object() {Account_Name, Phone, Address, City, Nothing, Zip, Terms, Taxable, Show_Price, Default_Hauler, EditBtn, Show_Price_On_Ticket}
+            Dim columnValuesArray() As Object = New Object() {Account_Name, Phone, Address, City, Nothing, Zip, Terms, Taxable, Show_Price, Default_Hauler, EditBtn, Show_Price_On_Ticket, Email_Ticket, Email}
             If (Not (parentStatesRowByFK_Account_States) Is Nothing) Then
                 columnValuesArray(4) = parentStatesRowByFK_Account_States(0)
             End If
@@ -5223,6 +5243,8 @@ Partial Public Class IRS_ScaleDataSet
             Me.columnDefault_Hauler = MyBase.Columns("Default_Hauler")
             Me.columnEditBtn = MyBase.Columns("EditBtn")
             Me.columnShow_Price_On_Ticket = MyBase.Columns("Show_Price_On_Ticket")
+            Me.columnEmail_Ticket = MyBase.Columns("Email_Ticket")
+            Me.columnEmail = MyBase.Columns("Email")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5252,6 +5274,10 @@ Partial Public Class IRS_ScaleDataSet
             MyBase.Columns.Add(Me.columnEditBtn)
             Me.columnShow_Price_On_Ticket = New Global.System.Data.DataColumn("Show_Price_On_Ticket", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnShow_Price_On_Ticket)
+            Me.columnEmail_Ticket = New Global.System.Data.DataColumn("Email_Ticket", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnEmail_Ticket)
+            Me.columnEmail = New Global.System.Data.DataColumn("Email", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnEmail)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnAccount_Name}, true))
             Me.columnAccount_Name.AllowDBNull = false
             Me.columnAccount_Name.Unique = true
@@ -5269,6 +5295,9 @@ Partial Public Class IRS_ScaleDataSet
             Me.columnEditBtn.ReadOnly = true
             Me.columnEditBtn.MaxLength = 4
             Me.columnShow_Price_On_Ticket.DefaultValue = CType(true,Boolean)
+            Me.columnEmail_Ticket.AllowDBNull = false
+            Me.columnEmail.AllowDBNull = false
+            Me.columnEmail.MaxLength = 255
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7490,6 +7519,18 @@ Partial Public Class IRS_ScaleDataSet
         
         Private columnTicket_Raw_Kind As Global.System.Data.DataColumn
         
+        Private columnAllowEmail As Global.System.Data.DataColumn
+        
+        Private columnSMTPServer As Global.System.Data.DataColumn
+        
+        Private columnSMTPPort As Global.System.Data.DataColumn
+        
+        Private columnSMTPUser As Global.System.Data.DataColumn
+        
+        Private columnSMTPPass As Global.System.Data.DataColumn
+        
+        Private columnSMTPFromEmail As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -7710,6 +7751,54 @@ Partial Public Class IRS_ScaleDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property AllowEmailColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnAllowEmail
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property SMTPServerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnSMTPServer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property SMTPPortColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnSMTPPort
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property SMTPUserColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnSMTPUser
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property SMTPPassColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnSMTPPass
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property SMTPFromEmailColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnSMTPFromEmail
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -7769,9 +7858,15 @@ Partial Public Class IRS_ScaleDataSet
                     ByVal Ticket_Paper As String,  _
                     ByVal Ticket_Width As Integer,  _
                     ByVal Ticket_Height As Integer,  _
-                    ByVal Ticket_Raw_Kind As Integer) As SetupRow
+                    ByVal Ticket_Raw_Kind As Integer,  _
+                    ByVal AllowEmail As Boolean,  _
+                    ByVal SMTPServer As String,  _
+                    ByVal SMTPPort As Integer,  _
+                    ByVal SMTPUser As String,  _
+                    ByVal SMTPPass As String,  _
+                    ByVal SMTPFromEmail As String) As SetupRow
             Dim rowSetupRow As SetupRow = CType(Me.NewRow,SetupRow)
-            Dim columnValuesArray() As Object = New Object() {Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale, Default_Hauler, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name, Show_SplitWeigh_Button, Station_Number, Show_State_Ticket_Button, Report_Printer, Ticket_Printer, Ticket_Number, Ticket_Copies_Per_Page, Ticket_Copies, Ticket_Paper, Ticket_Width, Ticket_Height, Ticket_Raw_Kind}
+            Dim columnValuesArray() As Object = New Object() {Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale, Default_Hauler, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name, Show_SplitWeigh_Button, Station_Number, Show_State_Ticket_Button, Report_Printer, Ticket_Printer, Ticket_Number, Ticket_Copies_Per_Page, Ticket_Copies, Ticket_Paper, Ticket_Width, Ticket_Height, Ticket_Raw_Kind, AllowEmail, SMTPServer, SMTPPort, SMTPUser, SMTPPass, SMTPFromEmail}
             rowSetupRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowSetupRow)
             Return rowSetupRow
@@ -7823,6 +7918,12 @@ Partial Public Class IRS_ScaleDataSet
             Me.columnTicket_Width = MyBase.Columns("Ticket_Width")
             Me.columnTicket_Height = MyBase.Columns("Ticket_Height")
             Me.columnTicket_Raw_Kind = MyBase.Columns("Ticket_Raw_Kind")
+            Me.columnAllowEmail = MyBase.Columns("AllowEmail")
+            Me.columnSMTPServer = MyBase.Columns("SMTPServer")
+            Me.columnSMTPPort = MyBase.Columns("SMTPPort")
+            Me.columnSMTPUser = MyBase.Columns("SMTPUser")
+            Me.columnSMTPPass = MyBase.Columns("SMTPPass")
+            Me.columnSMTPFromEmail = MyBase.Columns("SMTPFromEmail")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7874,6 +7975,18 @@ Partial Public Class IRS_ScaleDataSet
             MyBase.Columns.Add(Me.columnTicket_Height)
             Me.columnTicket_Raw_Kind = New Global.System.Data.DataColumn("Ticket_Raw_Kind", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnTicket_Raw_Kind)
+            Me.columnAllowEmail = New Global.System.Data.DataColumn("AllowEmail", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnAllowEmail)
+            Me.columnSMTPServer = New Global.System.Data.DataColumn("SMTPServer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnSMTPServer)
+            Me.columnSMTPPort = New Global.System.Data.DataColumn("SMTPPort", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnSMTPPort)
+            Me.columnSMTPUser = New Global.System.Data.DataColumn("SMTPUser", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnSMTPUser)
+            Me.columnSMTPPass = New Global.System.Data.DataColumn("SMTPPass", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnSMTPPass)
+            Me.columnSMTPFromEmail = New Global.System.Data.DataColumn("SMTPFromEmail", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnSMTPFromEmail)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnCompany_Name}, true))
             Me.columnCompany_Name.AllowDBNull = false
             Me.columnCompany_Name.Unique = true
@@ -7889,6 +8002,11 @@ Partial Public Class IRS_ScaleDataSet
             Me.columnReport_Printer.MaxLength = 200
             Me.columnTicket_Printer.MaxLength = 200
             Me.columnTicket_Paper.MaxLength = 100
+            Me.columnAllowEmail.AllowDBNull = false
+            Me.columnSMTPServer.MaxLength = 100
+            Me.columnSMTPUser.MaxLength = 100
+            Me.columnSMTPPass.MaxLength = 100
+            Me.columnSMTPFromEmail.MaxLength = 255
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -12423,6 +12541,28 @@ Partial Public Class IRS_ScaleDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Email_Ticket() As Boolean
+            Get
+                Return CType(Me(Me.tableAccount.Email_TicketColumn),Boolean)
+            End Get
+            Set
+                Me(Me.tableAccount.Email_TicketColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Email() As String
+            Get
+                Return CType(Me(Me.tableAccount.EmailColumn),String)
+            End Get
+            Set
+                Me(Me.tableAccount.EmailColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property StatesRow() As StatesRow
             Get
                 Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK_Account_States")),StatesRow)
@@ -14519,6 +14659,92 @@ Partial Public Class IRS_ScaleDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property AllowEmail() As Boolean
+            Get
+                Return CType(Me(Me.tableSetup.AllowEmailColumn),Boolean)
+            End Get
+            Set
+                Me(Me.tableSetup.AllowEmailColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property SMTPServer() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSetup.SMTPServerColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'SMTPServer' in table 'Setup' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSetup.SMTPServerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property SMTPPort() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableSetup.SMTPPortColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'SMTPPort' in table 'Setup' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSetup.SMTPPortColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property SMTPUser() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSetup.SMTPUserColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'SMTPUser' in table 'Setup' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSetup.SMTPUserColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property SMTPPass() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSetup.SMTPPassColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'SMTPPass' in table 'Setup' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSetup.SMTPPassColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property SMTPFromEmail() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableSetup.SMTPFromEmailColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'SMTPFromEmail' in table 'Setup' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableSetup.SMTPFromEmailColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsHeader1Null() As Boolean
             Return Me.IsNull(Me.tableSetup.Header1Column)
         End Function
@@ -14755,6 +14981,66 @@ Partial Public Class IRS_ScaleDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetTicket_Raw_KindNull()
             Me(Me.tableSetup.Ticket_Raw_KindColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsSMTPServerNull() As Boolean
+            Return Me.IsNull(Me.tableSetup.SMTPServerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetSMTPServerNull()
+            Me(Me.tableSetup.SMTPServerColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsSMTPPortNull() As Boolean
+            Return Me.IsNull(Me.tableSetup.SMTPPortColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetSMTPPortNull()
+            Me(Me.tableSetup.SMTPPortColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsSMTPUserNull() As Boolean
+            Return Me.IsNull(Me.tableSetup.SMTPUserColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetSMTPUserNull()
+            Me(Me.tableSetup.SMTPUserColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsSMTPPassNull() As Boolean
+            Return Me.IsNull(Me.tableSetup.SMTPPassColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetSMTPPassNull()
+            Me(Me.tableSetup.SMTPPassColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsSMTPFromEmailNull() As Boolean
+            Return Me.IsNull(Me.tableSetup.SMTPFromEmailColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetSMTPFromEmailNull()
+            Me(Me.tableSetup.SMTPFromEmailColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -20152,6 +20438,8 @@ Namespace IRS_ScaleDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Default_Hauler", "Default_Hauler")
             tableMapping.ColumnMappings.Add("EditBtn", "EditBtn")
             tableMapping.ColumnMappings.Add("Show_Price_On_Ticket", "Show_Price_On_Ticket")
+            tableMapping.ColumnMappings.Add("Email_Ticket", "Email_Ticket")
+            tableMapping.ColumnMappings.Add("Email", "Email")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -20161,12 +20449,13 @@ Namespace IRS_ScaleDataSetTableAdapters
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [Account] ([Account_Name], [Phone], [Address], [City], [State], [Zip]"& _ 
-                ", [Terms], [Taxable], [Show_Price], [Default_Hauler], [Show_Price_On_Ticket]) VA"& _ 
-                "LUES (@Account_Name, @Phone, @Address, @City, @State, @Zip, @Terms, @Taxable, @S"& _ 
-                "how_Price, @Default_Hauler, @Show_Price_On_Ticket);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Account_Name, Phone,"& _ 
-                " Address, City, State, Zip, Terms, Taxable, Show_Price, Default_Hauler, 'Edit' A"& _ 
-                "S EditBtn, Show_Price_On_Ticket FROM Account WHERE (Account_Name = @Account_Name"& _ 
-                ") ORDER BY Account_Name"
+                ", [Terms], [Taxable], [Show_Price], [Default_Hauler], [Show_Price_On_Ticket], [E"& _ 
+                "mail_Ticket], [Email]) VALUES (@Account_Name, @Phone, @Address, @City, @State, @"& _ 
+                "Zip, @Terms, @Taxable, @Show_Price, @Default_Hauler, @Show_Price_On_Ticket, @Ema"& _ 
+                "il_Ticket, @Email);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Account_Name, Phone, Address, City, State, Zip, Term"& _ 
+                "s, Taxable, Show_Price, Default_Hauler, 'Edit' AS EditBtn, Show_Price_On_Ticket,"& _ 
+                " Email_Ticket, Email FROM Account WHERE (Account_Name = @Account_Name) ORDER BY "& _ 
+                "Account_Name"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Account_Name", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Account_Name", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Phone", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Phone", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -20179,15 +20468,18 @@ Namespace IRS_ScaleDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Show_Price", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Show_Price", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Default_Hauler", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Default_Hauler", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Show_Price_On_Ticket", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Show_Price_On_Ticket", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email_Ticket", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email_Ticket", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [Account] SET [Account_Name] = @Account_Name, [Phone] = @Phone, [Address] "& _ 
                 "= @Address, [City] = @City, [State] = @State, [Zip] = @Zip, [Terms] = @Terms, [T"& _ 
                 "axable] = @Taxable, [Show_Price] = @Show_Price, [Default_Hauler] = @Default_Haul"& _ 
-                "er, [Show_Price_On_Ticket] = @Show_Price_On_Ticket WHERE (([Account_Name] = @Ori"& _ 
-                "ginal_Account_Name));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Account_Name, Phone, Address, City, State, Zip, Te"& _ 
-                "rms, Taxable, Show_Price, Default_Hauler, 'Edit' AS EditBtn, Show_Price_On_Ticke"& _ 
-                "t FROM Account WHERE (Account_Name = @Account_Name) ORDER BY Account_Name"
+                "er, [Show_Price_On_Ticket] = @Show_Price_On_Ticket, [Email_Ticket] = @Email_Tick"& _ 
+                "et, [Email] = @Email WHERE (([Account_Name] = @Original_Account_Name));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT "& _ 
+                "Account_Name, Phone, Address, City, State, Zip, Terms, Taxable, Show_Price, Defa"& _ 
+                "ult_Hauler, 'Edit' AS EditBtn, Show_Price_On_Ticket, Email_Ticket, Email FROM Ac"& _ 
+                "count WHERE (Account_Name = @Account_Name) ORDER BY Account_Name"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Account_Name", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Account_Name", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Phone", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Phone", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -20200,6 +20492,8 @@ Namespace IRS_ScaleDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Show_Price", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Show_Price", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Default_Hauler", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Default_Hauler", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Show_Price_On_Ticket", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Show_Price_On_Ticket", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email_Ticket", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email_Ticket", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Account_Name", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Account_Name", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
         
@@ -20213,13 +20507,21 @@ Namespace IRS_ScaleDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT     Account_Name, Phone, Address, City, State, Zip, Terms, Taxable, Show_P"& _ 
-                "rice, Default_Hauler, 'Edit' AS EditBtn, Show_Price_On_Ticket"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM         Acco"& _ 
-                "unt"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY Account_Name"
+            Me._commandCollection(0).CommandText = "SELECT        Account_Name, Phone, Address, City, State, Zip, Terms, Taxable, Sho"& _ 
+                "w_Price, Default_Hauler, 'Edit' AS EditBtn, Show_Price_On_Ticket, Email_Ticket, "& _ 
+                "Email"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Account"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY Account_Name"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT        Account_Name, Phone, Address, City, State, Zip, Terms, Taxable, Sho"& _ 
+                "w_Price, Default_Hauler, 'Edit' AS EditBtn, Show_Price_On_Ticket, Email_Ticket, "& _ 
+                "Email"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Account"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Account_Name = @AccountName)"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDE"& _ 
+                "R BY Account_Name"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@AccountName", Global.System.Data.SqlDbType.VarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "Account_Name", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -20244,6 +20546,24 @@ Namespace IRS_ScaleDataSetTableAdapters
             Dim dataTable As IRS_ScaleDataSet.AccountDataTable = New IRS_ScaleDataSet.AccountDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillByAccountName(ByVal dataTable As IRS_ScaleDataSet.AccountDataTable, ByVal AccountName As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (AccountName Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("AccountName")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(AccountName,String)
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -20303,7 +20623,7 @@ Namespace IRS_ScaleDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean)) As Integer
+        Public Overloads Overridable Function Insert(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Boolean, ByVal Email As String) As Integer
             If (Account_Name Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Account_Name")
             Else
@@ -20359,6 +20679,12 @@ Namespace IRS_ScaleDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
             End If
+            Me.Adapter.InsertCommand.Parameters(11).Value = CType(Email_Ticket,Boolean)
+            If (Email Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Email")
+            Else
+                Me.Adapter.InsertCommand.Parameters(12).Value = CType(Email,String)
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -20378,7 +20704,7 @@ Namespace IRS_ScaleDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Original_Account_Name As String) As Integer
+        Public Overloads Overridable Function Update(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Boolean, ByVal Email As String, ByVal Original_Account_Name As String) As Integer
             If (Account_Name Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Account_Name")
             Else
@@ -20434,10 +20760,16 @@ Namespace IRS_ScaleDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
             End If
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Email_Ticket,Boolean)
+            If (Email Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Email")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Email,String)
+            End If
             If (Original_Account_Name Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_Account_Name")
             Else
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_Account_Name,String)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_Account_Name,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -20458,8 +20790,8 @@ Namespace IRS_ScaleDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Original_Account_Name As String) As Integer
-            Return Me.Update(Original_Account_Name, Phone, Address, City, State, Zip, Terms, Taxable, Show_Price, Default_Hauler, Show_Price_On_Ticket, Original_Account_Name)
+        Public Overloads Overridable Function Update(ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Boolean, ByVal Email As String, ByVal Original_Account_Name As String) As Integer
+            Return Me.Update(Original_Account_Name, Phone, Address, City, State, Zip, Terms, Taxable, Show_Price, Default_Hauler, Show_Price_On_Ticket, Email_Ticket, Email, Original_Account_Name)
         End Function
     End Class
     
@@ -21244,7 +21576,7 @@ Namespace IRS_ScaleDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetDataBy3(ByVal StartingTicket As Integer, ByVal EndingTicket As Integer) As IRS_ScaleDataSet.TransactionsDataTable
+        Public Overloads Overridable Function GetDataBy31(ByVal StartingTicket As Integer, ByVal EndingTicket As Integer) As IRS_ScaleDataSet.TransactionsDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(6)
             Me.Adapter.SelectCommand.Parameters(0).Value = CType(StartingTicket,Integer)
             Me.Adapter.SelectCommand.Parameters(1).Value = CType(EndingTicket,Integer)
@@ -22106,6 +22438,12 @@ Namespace IRS_ScaleDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Ticket_Width", "Ticket_Width")
             tableMapping.ColumnMappings.Add("Ticket_Height", "Ticket_Height")
             tableMapping.ColumnMappings.Add("Ticket_Raw_Kind", "Ticket_Raw_Kind")
+            tableMapping.ColumnMappings.Add("AllowEmail", "AllowEmail")
+            tableMapping.ColumnMappings.Add("SMTPServer", "SMTPServer")
+            tableMapping.ColumnMappings.Add("SMTPPort", "SMTPPort")
+            tableMapping.ColumnMappings.Add("SMTPUser", "SMTPUser")
+            tableMapping.ColumnMappings.Add("SMTPPass", "SMTPPass")
+            tableMapping.ColumnMappings.Add("SMTPFromEmail", "SMTPFromEmail")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -22119,17 +22457,20 @@ Namespace IRS_ScaleDataSetTableAdapters
                 "_By_Default], [Pit_Name], [Show_SplitWeigh_Button], [Station_Number], [Show_Stat"& _ 
                 "e_Ticket_Button], [Report_Printer], [Ticket_Printer], [Ticket_Number], [Ticket_C"& _ 
                 "opies_Per_Page], [Ticket_Copies], [Ticket_Paper], [Ticket_Width], [Ticket_Height"& _ 
-                "], [Ticket_Raw_Kind]) VALUES (@Company_Name, @Header1, @Header2, @Header3, @Tax_"& _ 
-                "Rate, @Simulate_Scale, @Default_Hauler, @Comm_Port, @Print_To_Screen, @Show_Pric"& _ 
-                "e_By_Default, @Pit_Name, @Show_SplitWeigh_Button, @Station_Number, @Show_State_T"& _ 
-                "icket_Button, @Report_Printer, @Ticket_Printer, @Ticket_Number, @Ticket_Copies_P"& _ 
-                "er_Page, @Ticket_Copies, @Ticket_Paper, @Ticket_Width, @Ticket_Height, @Ticket_R"& _ 
-                "aw_Kind);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Sc"& _ 
-                "ale, Default_Hauler, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name"& _ 
-                ", Show_SplitWeigh_Button, Station_Number, Show_State_Ticket_Button, Report_Print"& _ 
-                "er, Ticket_Printer, Ticket_Number, Ticket_Copies_Per_Page, Ticket_Copies, Ticket"& _ 
-                "_Paper, Ticket_Width, Ticket_Height, Ticket_Raw_Kind FROM Setup WHERE (Company_N"& _ 
-                "ame = @Company_Name)"
+                "], [Ticket_Raw_Kind], [AllowEmail], [SMTPServer], [SMTPPort], [SMTPUser], [SMTPP"& _ 
+                "ass], [SMTPFromEmail]) VALUES (@Company_Name, @Header1, @Header2, @Header3, @Tax"& _ 
+                "_Rate, @Simulate_Scale, @Default_Hauler, @Comm_Port, @Print_To_Screen, @Show_Pri"& _ 
+                "ce_By_Default, @Pit_Name, @Show_SplitWeigh_Button, @Station_Number, @Show_State_"& _ 
+                "Ticket_Button, @Report_Printer, @Ticket_Printer, @Ticket_Number, @Ticket_Copies_"& _ 
+                "Per_Page, @Ticket_Copies, @Ticket_Paper, @Ticket_Width, @Ticket_Height, @Ticket_"& _ 
+                "Raw_Kind, @AllowEmail, @SMTPServer, @SMTPPort, @SMTPUser, @SMTPPass, @SMTPFromEm"& _ 
+                "ail);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale,"& _ 
+                " Default_Hauler, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name, Sh"& _ 
+                "ow_SplitWeigh_Button, Station_Number, Show_State_Ticket_Button, Report_Printer, "& _ 
+                "Ticket_Printer, Ticket_Number, Ticket_Copies_Per_Page, Ticket_Copies, Ticket_Pap"& _ 
+                "er, Ticket_Width, Ticket_Height, Ticket_Raw_Kind, AllowEmail, SMTPServer, SMTPPo"& _ 
+                "rt, SMTPUser, SMTPPass, SMTPFromEmail FROM Setup WHERE (Company_Name = @Company_"& _ 
+                "Name)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Company_Name", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Company_Name", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Header1", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Header1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -22154,6 +22495,12 @@ Namespace IRS_ScaleDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Ticket_Width", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Ticket_Width", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Ticket_Height", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Ticket_Height", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Ticket_Raw_Kind", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Ticket_Raw_Kind", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@AllowEmail", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "AllowEmail", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPServer", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPServer", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPPort", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPPort", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPUser", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPUser", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPPass", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPPass", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPFromEmail", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPFromEmail", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [Setup] SET [Company_Name] = @Company_Name, [Header1] = @Header1, [Header2"& _ 
@@ -22166,13 +22513,15 @@ Namespace IRS_ScaleDataSetTableAdapters
                 "nter, [Ticket_Number] = @Ticket_Number, [Ticket_Copies_Per_Page] = @Ticket_Copie"& _ 
                 "s_Per_Page, [Ticket_Copies] = @Ticket_Copies, [Ticket_Paper] = @Ticket_Paper, [T"& _ 
                 "icket_Width] = @Ticket_Width, [Ticket_Height] = @Ticket_Height, [Ticket_Raw_Kind"& _ 
-                "] = @Ticket_Raw_Kind WHERE (([Company_Name] = @Original_Company_Name));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT "& _ 
-                "Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale, Default_Haule"& _ 
-                "r, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name, Show_SplitWeigh_"& _ 
-                "Button, Station_Number, Show_State_Ticket_Button, Report_Printer, Ticket_Printer"& _ 
-                ", Ticket_Number, Ticket_Copies_Per_Page, Ticket_Copies, Ticket_Paper, Ticket_Wid"& _ 
-                "th, Ticket_Height, Ticket_Raw_Kind FROM Setup WHERE (Company_Name = @Company_Nam"& _ 
-                "e)"
+                "] = @Ticket_Raw_Kind, [AllowEmail] = @AllowEmail, [SMTPServer] = @SMTPServer, [S"& _ 
+                "MTPPort] = @SMTPPort, [SMTPUser] = @SMTPUser, [SMTPPass] = @SMTPPass, [SMTPFromE"& _ 
+                "mail] = @SMTPFromEmail WHERE (([Company_Name] = @Original_Company_Name));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELEC"& _ 
+                "T Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale, Default_Hau"& _ 
+                "ler, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name, Show_SplitWeig"& _ 
+                "h_Button, Station_Number, Show_State_Ticket_Button, Report_Printer, Ticket_Print"& _ 
+                "er, Ticket_Number, Ticket_Copies_Per_Page, Ticket_Copies, Ticket_Paper, Ticket_W"& _ 
+                "idth, Ticket_Height, Ticket_Raw_Kind, AllowEmail, SMTPServer, SMTPPort, SMTPUser"& _ 
+                ", SMTPPass, SMTPFromEmail FROM Setup WHERE (Company_Name = @Company_Name)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Company_Name", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Company_Name", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Header1", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Header1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -22197,6 +22546,12 @@ Namespace IRS_ScaleDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Ticket_Width", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Ticket_Width", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Ticket_Height", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Ticket_Height", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Ticket_Raw_Kind", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Ticket_Raw_Kind", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@AllowEmail", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "AllowEmail", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPServer", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPServer", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPPort", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPPort", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPUser", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPUser", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPPass", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPPass", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SMTPFromEmail", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SMTPFromEmail", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Company_Name", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Company_Name", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
         
@@ -22213,12 +22568,13 @@ Namespace IRS_ScaleDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT     Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale, Def"& _ 
-                "ault_Hauler, Comm_Port, Print_To_Screen, Show_Price_By_Default, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"              "& _ 
-                "        Pit_Name, Show_SplitWeigh_Button, Station_Number, Show_State_Ticket_Butt"& _ 
-                "on, Report_Printer, Ticket_Printer, Ticket_Number, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                      Ticke"& _ 
-                "t_Copies_Per_Page, Ticket_Copies, Ticket_Paper, Ticket_Width, Ticket_Height, Tic"& _ 
-                "ket_Raw_Kind"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM         Setup"
+            Me._commandCollection(0).CommandText = "SELECT        Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale, "& _ 
+                "Default_Hauler, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name, Sho"& _ 
+                "w_SplitWeigh_Button, Station_Number, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Show_State_Ticke"& _ 
+                "t_Button, Report_Printer, Ticket_Printer, Ticket_Number, Ticket_Copies_Per_Page,"& _ 
+                " Ticket_Copies, Ticket_Paper, Ticket_Width, Ticket_Height, Ticket_Raw_Kind, Allo"& _ 
+                "wEmail, SMTPServer, SMTPPort, SMTPUser, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         SMTPPass, SMT"& _ 
+                "PFromEmail"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Setup"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -22326,7 +22682,13 @@ Namespace IRS_ScaleDataSetTableAdapters
                     ByVal Ticket_Paper As String,  _
                     ByVal Ticket_Width As Global.System.Nullable(Of Integer),  _
                     ByVal Ticket_Height As Global.System.Nullable(Of Integer),  _
-                    ByVal Ticket_Raw_Kind As Global.System.Nullable(Of Integer)) As Integer
+                    ByVal Ticket_Raw_Kind As Global.System.Nullable(Of Integer),  _
+                    ByVal AllowEmail As Boolean,  _
+                    ByVal SMTPServer As String,  _
+                    ByVal SMTPPort As Global.System.Nullable(Of Integer),  _
+                    ByVal SMTPUser As String,  _
+                    ByVal SMTPPass As String,  _
+                    ByVal SMTPFromEmail As String) As Integer
             If (Company_Name Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Company_Name")
             Else
@@ -22434,6 +22796,32 @@ Namespace IRS_ScaleDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(22).Value = Global.System.DBNull.Value
             End If
+            Me.Adapter.InsertCommand.Parameters(23).Value = CType(AllowEmail,Boolean)
+            If (SMTPServer Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(24).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(24).Value = CType(SMTPServer,String)
+            End If
+            If (SMTPPort.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(25).Value = CType(SMTPPort.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(25).Value = Global.System.DBNull.Value
+            End If
+            If (SMTPUser Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(26).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(26).Value = CType(SMTPUser,String)
+            End If
+            If (SMTPPass Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(27).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(27).Value = CType(SMTPPass,String)
+            End If
+            If (SMTPFromEmail Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(28).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(28).Value = CType(SMTPFromEmail,String)
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -22477,6 +22865,12 @@ Namespace IRS_ScaleDataSetTableAdapters
                     ByVal Ticket_Width As Global.System.Nullable(Of Integer),  _
                     ByVal Ticket_Height As Global.System.Nullable(Of Integer),  _
                     ByVal Ticket_Raw_Kind As Global.System.Nullable(Of Integer),  _
+                    ByVal AllowEmail As Boolean,  _
+                    ByVal SMTPServer As String,  _
+                    ByVal SMTPPort As Global.System.Nullable(Of Integer),  _
+                    ByVal SMTPUser As String,  _
+                    ByVal SMTPPass As String,  _
+                    ByVal SMTPFromEmail As String,  _
                     ByVal Original_Company_Name As String) As Integer
             If (Company_Name Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Company_Name")
@@ -22585,10 +22979,36 @@ Namespace IRS_ScaleDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
             End If
+            Me.Adapter.UpdateCommand.Parameters(23).Value = CType(AllowEmail,Boolean)
+            If (SMTPServer Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(SMTPServer,String)
+            End If
+            If (SMTPPort.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(SMTPPort.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
+            End If
+            If (SMTPUser Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(26).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(SMTPUser,String)
+            End If
+            If (SMTPPass Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(SMTPPass,String)
+            End If
+            If (SMTPFromEmail Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(28).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(SMTPFromEmail,String)
+            End If
             If (Original_Company_Name Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_Company_Name")
             Else
-                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_Company_Name,String)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_Company_Name,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -22632,8 +23052,14 @@ Namespace IRS_ScaleDataSetTableAdapters
                     ByVal Ticket_Width As Global.System.Nullable(Of Integer),  _
                     ByVal Ticket_Height As Global.System.Nullable(Of Integer),  _
                     ByVal Ticket_Raw_Kind As Global.System.Nullable(Of Integer),  _
+                    ByVal AllowEmail As Boolean,  _
+                    ByVal SMTPServer As String,  _
+                    ByVal SMTPPort As Global.System.Nullable(Of Integer),  _
+                    ByVal SMTPUser As String,  _
+                    ByVal SMTPPass As String,  _
+                    ByVal SMTPFromEmail As String,  _
                     ByVal Original_Company_Name As String) As Integer
-            Return Me.Update(Original_Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale, Default_Hauler, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name, Show_SplitWeigh_Button, Station_Number, Show_State_Ticket_Button, Report_Printer, Ticket_Printer, Ticket_Number, Ticket_Copies_Per_Page, Ticket_Copies, Ticket_Paper, Ticket_Width, Ticket_Height, Ticket_Raw_Kind, Original_Company_Name)
+            Return Me.Update(Original_Company_Name, Header1, Header2, Header3, Tax_Rate, Simulate_Scale, Default_Hauler, Comm_Port, Print_To_Screen, Show_Price_By_Default, Pit_Name, Show_SplitWeigh_Button, Station_Number, Show_State_Ticket_Button, Report_Printer, Ticket_Printer, Ticket_Number, Ticket_Copies_Per_Page, Ticket_Copies, Ticket_Paper, Ticket_Width, Ticket_Height, Ticket_Raw_Kind, AllowEmail, SMTPServer, SMTPPort, SMTPUser, SMTPPass, SMTPFromEmail, Original_Company_Name)
         End Function
     End Class
     

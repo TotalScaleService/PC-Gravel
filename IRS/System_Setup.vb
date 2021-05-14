@@ -172,4 +172,16 @@ Public Class System_Setup
         Comm_PortComboBox2.Enabled = ckDualScale.Checked
 
     End Sub
+
+    Private Sub ckAllowEmail_CheckedChanged(sender As Object, e As EventArgs) Handles ckAllowEmail.CheckedChanged
+        pnlEmail.Visible = ckAllowEmail.Checked
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
 End Class

@@ -46,6 +46,7 @@ Partial Class System_Setup
         Dim Ticket_PaperLabel As System.Windows.Forms.Label
         Dim Comm_PortLabel2 As System.Windows.Forms.Label
         Dim Label5 As System.Windows.Forms.Label
+        Dim Label6 As System.Windows.Forms.Label
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
@@ -88,6 +89,18 @@ Partial Class System_Setup
         Me.txtScale2Name = New System.Windows.Forms.TextBox()
         Me.Comm_PortComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Comm_PortComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.ckAllowEmail = New System.Windows.Forms.CheckBox()
+        Me.pnlEmail = New System.Windows.Forms.Panel()
+        Me.txtSmtpPass = New System.Windows.Forms.TextBox()
+        Me.txtSmtpUser = New System.Windows.Forms.TextBox()
+        Me.numSMTPPort = New System.Windows.Forms.NumericUpDown()
+        Me.txtSMTPServer = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Company_NameLabel = New System.Windows.Forms.Label()
         Header1Label = New System.Windows.Forms.Label()
         Header2Label = New System.Windows.Forms.Label()
@@ -111,6 +124,7 @@ Partial Class System_Setup
         Ticket_PaperLabel = New System.Windows.Forms.Label()
         Comm_PortLabel2 = New System.Windows.Forms.Label()
         Label5 = New System.Windows.Forms.Label()
+        Label6 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.SetupBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IRS_ScaleDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,6 +134,8 @@ Partial Class System_Setup
         CType(Me.Station_NumberNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Ticket_Copies_Per_PageNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Ticket_CopiesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlEmail.SuspendLayout()
+        CType(Me.numSMTPPort, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Company_NameLabel
@@ -245,7 +261,7 @@ Partial Class System_Setup
         Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label2.Location = New System.Drawing.Point(499, 185)
         Label2.Name = "Label2"
-        Label2.Size = New System.Drawing.Size(72, 17)
+        Label2.Size = New System.Drawing.Size(54, 13)
         Label2.TabIndex = 37
         Label2.Text = " .05=15% "
         '
@@ -254,7 +270,7 @@ Partial Class System_Setup
         Report_PrinterLabel.AutoSize = True
         Report_PrinterLabel.Location = New System.Drawing.Point(92, 212)
         Report_PrinterLabel.Name = "Report_PrinterLabel"
-        Report_PrinterLabel.Size = New System.Drawing.Size(151, 25)
+        Report_PrinterLabel.Size = New System.Drawing.Size(127, 20)
         Report_PrinterLabel.TabIndex = 37
         Report_PrinterLabel.Text = "Report Printer:"
         '
@@ -263,7 +279,7 @@ Partial Class System_Setup
         Ticket_PrinterLabel.AutoSize = True
         Ticket_PrinterLabel.Location = New System.Drawing.Point(99, 244)
         Ticket_PrinterLabel.Name = "Ticket_PrinterLabel"
-        Ticket_PrinterLabel.Size = New System.Drawing.Size(147, 25)
+        Ticket_PrinterLabel.Size = New System.Drawing.Size(120, 20)
         Ticket_PrinterLabel.TabIndex = 38
         Ticket_PrinterLabel.Text = "Ticket Printer:"
         '
@@ -272,7 +288,7 @@ Partial Class System_Setup
         Ticket_NumberLabel.AutoSize = True
         Ticket_NumberLabel.Location = New System.Drawing.Point(90, 19)
         Ticket_NumberLabel.Name = "Ticket_NumberLabel"
-        Ticket_NumberLabel.Size = New System.Drawing.Size(159, 25)
+        Ticket_NumberLabel.Size = New System.Drawing.Size(129, 20)
         Ticket_NumberLabel.TabIndex = 41
         Ticket_NumberLabel.Text = "Ticket Number:"
         '
@@ -281,7 +297,7 @@ Partial Class System_Setup
         Ticket_Copies_Per_PageLabel.AutoSize = True
         Ticket_Copies_Per_PageLabel.Location = New System.Drawing.Point(19, 273)
         Ticket_Copies_Per_PageLabel.Name = "Ticket_Copies_Per_PageLabel"
-        Ticket_Copies_Per_PageLabel.Size = New System.Drawing.Size(247, 25)
+        Ticket_Copies_Per_PageLabel.Size = New System.Drawing.Size(200, 20)
         Ticket_Copies_Per_PageLabel.TabIndex = 42
         Ticket_Copies_Per_PageLabel.Text = "Ticket Copies Per Page:"
         '
@@ -290,7 +306,7 @@ Partial Class System_Setup
         Ticket_CopiesLabel.AutoSize = True
         Ticket_CopiesLabel.Location = New System.Drawing.Point(292, 273)
         Ticket_CopiesLabel.Name = "Ticket_CopiesLabel"
-        Ticket_CopiesLabel.Size = New System.Drawing.Size(147, 25)
+        Ticket_CopiesLabel.Size = New System.Drawing.Size(122, 20)
         Ticket_CopiesLabel.TabIndex = 43
         Ticket_CopiesLabel.Text = "Pages to Print"
         '
@@ -308,7 +324,7 @@ Partial Class System_Setup
         Ticket_PaperLabel.AutoSize = True
         Ticket_PaperLabel.Location = New System.Drawing.Point(509, 273)
         Ticket_PaperLabel.Name = "Ticket_PaperLabel"
-        Ticket_PaperLabel.Size = New System.Drawing.Size(141, 25)
+        Ticket_PaperLabel.Size = New System.Drawing.Size(114, 20)
         Ticket_PaperLabel.TabIndex = 46
         Ticket_PaperLabel.Text = "Ticket Paper:"
         '
@@ -330,6 +346,15 @@ Partial Class System_Setup
         Label5.Text = "Receipt Port:"
         Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'Label6
+        '
+        Label6.Location = New System.Drawing.Point(19, 527)
+        Label6.Name = "Label6"
+        Label6.Size = New System.Drawing.Size(192, 20)
+        Label6.TabIndex = 58
+        Label6.Text = "Allow Email:"
+        Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -338,7 +363,7 @@ Partial Class System_Setup
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(464, 537)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(464, 709)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(5)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -395,7 +420,7 @@ Partial Class System_Setup
         Me.Company_NameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "Company_Name", True))
         Me.Company_NameTextBox.Location = New System.Drawing.Point(225, 49)
         Me.Company_NameTextBox.Name = "Company_NameTextBox"
-        Me.Company_NameTextBox.Size = New System.Drawing.Size(504, 30)
+        Me.Company_NameTextBox.Size = New System.Drawing.Size(504, 26)
         Me.Company_NameTextBox.TabIndex = 9
         '
         'Header1TextBox
@@ -403,7 +428,7 @@ Partial Class System_Setup
         Me.Header1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "Header1", True))
         Me.Header1TextBox.Location = New System.Drawing.Point(225, 81)
         Me.Header1TextBox.Name = "Header1TextBox"
-        Me.Header1TextBox.Size = New System.Drawing.Size(504, 30)
+        Me.Header1TextBox.Size = New System.Drawing.Size(504, 26)
         Me.Header1TextBox.TabIndex = 11
         '
         'Header2TextBox
@@ -411,7 +436,7 @@ Partial Class System_Setup
         Me.Header2TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "Header2", True))
         Me.Header2TextBox.Location = New System.Drawing.Point(225, 113)
         Me.Header2TextBox.Name = "Header2TextBox"
-        Me.Header2TextBox.Size = New System.Drawing.Size(504, 30)
+        Me.Header2TextBox.Size = New System.Drawing.Size(504, 26)
         Me.Header2TextBox.TabIndex = 13
         '
         'Header3TextBox
@@ -419,7 +444,7 @@ Partial Class System_Setup
         Me.Header3TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "Header3", True))
         Me.Header3TextBox.Location = New System.Drawing.Point(225, 145)
         Me.Header3TextBox.Name = "Header3TextBox"
-        Me.Header3TextBox.Size = New System.Drawing.Size(504, 30)
+        Me.Header3TextBox.Size = New System.Drawing.Size(504, 26)
         Me.Header3TextBox.TabIndex = 15
         '
         'Tax_RateNumericUpDown
@@ -429,7 +454,7 @@ Partial Class System_Setup
         Me.Tax_RateNumericUpDown.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
         Me.Tax_RateNumericUpDown.Location = New System.Drawing.Point(420, 178)
         Me.Tax_RateNumericUpDown.Name = "Tax_RateNumericUpDown"
-        Me.Tax_RateNumericUpDown.Size = New System.Drawing.Size(73, 30)
+        Me.Tax_RateNumericUpDown.Size = New System.Drawing.Size(73, 26)
         Me.Tax_RateNumericUpDown.TabIndex = 17
         Me.Tax_RateNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -448,7 +473,7 @@ Partial Class System_Setup
         Me.Default_HaulerComboBox.FormattingEnabled = True
         Me.Default_HaulerComboBox.Location = New System.Drawing.Point(226, 305)
         Me.Default_HaulerComboBox.Name = "Default_HaulerComboBox"
-        Me.Default_HaulerComboBox.Size = New System.Drawing.Size(504, 33)
+        Me.Default_HaulerComboBox.Size = New System.Drawing.Size(504, 28)
         Me.Default_HaulerComboBox.TabIndex = 21
         Me.Default_HaulerComboBox.ValueMember = "Hauler_Name"
         '
@@ -462,7 +487,7 @@ Partial Class System_Setup
         Me.Comm_PortComboBox.FormattingEnabled = True
         Me.Comm_PortComboBox.Location = New System.Drawing.Point(640, 379)
         Me.Comm_PortComboBox.Name = "Comm_PortComboBox"
-        Me.Comm_PortComboBox.Size = New System.Drawing.Size(73, 33)
+        Me.Comm_PortComboBox.Size = New System.Drawing.Size(73, 28)
         Me.Comm_PortComboBox.TabIndex = 23
         '
         'Print_To_ScreenCheckBox
@@ -486,7 +511,7 @@ Partial Class System_Setup
         Me.Pit_NameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "Pit_Name", True))
         Me.Pit_NameTextBox.Location = New System.Drawing.Point(223, 485)
         Me.Pit_NameTextBox.Name = "Pit_NameTextBox"
-        Me.Pit_NameTextBox.Size = New System.Drawing.Size(504, 30)
+        Me.Pit_NameTextBox.Size = New System.Drawing.Size(504, 26)
         Me.Pit_NameTextBox.TabIndex = 29
         '
         'Show_SplitWeigh_ButtonCheckBox
@@ -503,7 +528,7 @@ Partial Class System_Setup
         Me.Station_NumberNumericUpDown.Location = New System.Drawing.Point(225, 177)
         Me.Station_NumberNumericUpDown.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.Station_NumberNumericUpDown.Name = "Station_NumberNumericUpDown"
-        Me.Station_NumberNumericUpDown.Size = New System.Drawing.Size(73, 30)
+        Me.Station_NumberNumericUpDown.Size = New System.Drawing.Size(73, 26)
         Me.Station_NumberNumericUpDown.TabIndex = 33
         Me.Station_NumberNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -513,7 +538,7 @@ Partial Class System_Setup
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(223, 537)
+        Me.Button1.Location = New System.Drawing.Point(251, 709)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 36)
         Me.Button1.TabIndex = 36
@@ -524,14 +549,14 @@ Partial Class System_Setup
         '
         Me.Report_PrinterTextBox.Location = New System.Drawing.Point(225, 209)
         Me.Report_PrinterTextBox.Name = "Report_PrinterTextBox"
-        Me.Report_PrinterTextBox.Size = New System.Drawing.Size(450, 30)
+        Me.Report_PrinterTextBox.Size = New System.Drawing.Size(450, 26)
         Me.Report_PrinterTextBox.TabIndex = 38
         '
         'Ticket_PrinterTextBox
         '
         Me.Ticket_PrinterTextBox.Location = New System.Drawing.Point(225, 241)
         Me.Ticket_PrinterTextBox.Name = "Ticket_PrinterTextBox"
-        Me.Ticket_PrinterTextBox.Size = New System.Drawing.Size(450, 30)
+        Me.Ticket_PrinterTextBox.Size = New System.Drawing.Size(450, 26)
         Me.Ticket_PrinterTextBox.TabIndex = 39
         '
         'PrintDialog1
@@ -563,7 +588,7 @@ Partial Class System_Setup
         Me.Ticket_NumberTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "Ticket_Number", True))
         Me.Ticket_NumberTextBox.Location = New System.Drawing.Point(225, 16)
         Me.Ticket_NumberTextBox.Name = "Ticket_NumberTextBox"
-        Me.Ticket_NumberTextBox.Size = New System.Drawing.Size(151, 30)
+        Me.Ticket_NumberTextBox.Size = New System.Drawing.Size(151, 26)
         Me.Ticket_NumberTextBox.TabIndex = 42
         Me.Ticket_NumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -574,7 +599,7 @@ Partial Class System_Setup
         Me.Ticket_Copies_Per_PageNumericUpDown.Maximum = New Decimal(New Integer() {3, 0, 0, 0})
         Me.Ticket_Copies_Per_PageNumericUpDown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.Ticket_Copies_Per_PageNumericUpDown.Name = "Ticket_Copies_Per_PageNumericUpDown"
-        Me.Ticket_Copies_Per_PageNumericUpDown.Size = New System.Drawing.Size(33, 30)
+        Me.Ticket_Copies_Per_PageNumericUpDown.Size = New System.Drawing.Size(33, 26)
         Me.Ticket_Copies_Per_PageNumericUpDown.TabIndex = 43
         Me.Ticket_Copies_Per_PageNumericUpDown.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -583,7 +608,7 @@ Partial Class System_Setup
         Me.Ticket_CopiesNumericUpDown.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.SetupBindingSource, "Ticket_Copies", True))
         Me.Ticket_CopiesNumericUpDown.Location = New System.Drawing.Point(420, 273)
         Me.Ticket_CopiesNumericUpDown.Name = "Ticket_CopiesNumericUpDown"
-        Me.Ticket_CopiesNumericUpDown.Size = New System.Drawing.Size(59, 30)
+        Me.Ticket_CopiesNumericUpDown.Size = New System.Drawing.Size(59, 26)
         Me.Ticket_CopiesNumericUpDown.TabIndex = 44
         '
         'ckFlashDeliveryRate
@@ -591,7 +616,7 @@ Partial Class System_Setup
         Me.ckFlashDeliveryRate.AutoSize = True
         Me.ckFlashDeliveryRate.Location = New System.Drawing.Point(698, 457)
         Me.ckFlashDeliveryRate.Name = "ckFlashDeliveryRate"
-        Me.ckFlashDeliveryRate.Size = New System.Drawing.Size(18, 17)
+        Me.ckFlashDeliveryRate.Size = New System.Drawing.Size(15, 14)
         Me.ckFlashDeliveryRate.TabIndex = 45
         Me.ckFlashDeliveryRate.UseVisualStyleBackColor = True
         '
@@ -600,7 +625,7 @@ Partial Class System_Setup
         Me.Ticket_PaperTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "Ticket_Paper", True))
         Me.Ticket_PaperTextBox.Location = New System.Drawing.Point(629, 273)
         Me.Ticket_PaperTextBox.Name = "Ticket_PaperTextBox"
-        Me.Ticket_PaperTextBox.Size = New System.Drawing.Size(101, 30)
+        Me.Ticket_PaperTextBox.Size = New System.Drawing.Size(101, 26)
         Me.Ticket_PaperTextBox.TabIndex = 47
         '
         'Button4
@@ -619,7 +644,7 @@ Partial Class System_Setup
         Me.ckDualScale.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ckDualScale.Location = New System.Drawing.Point(118, 343)
         Me.ckDualScale.Name = "ckDualScale"
-        Me.ckDualScale.Size = New System.Drawing.Size(146, 29)
+        Me.ckDualScale.Size = New System.Drawing.Size(120, 24)
         Me.ckDualScale.TabIndex = 49
         Me.ckDualScale.Text = "Dual Scale:"
         Me.ckDualScale.UseVisualStyleBackColor = True
@@ -629,7 +654,7 @@ Partial Class System_Setup
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(103, 384)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(160, 25)
+        Me.Label1.Size = New System.Drawing.Size(130, 20)
         Me.Label1.TabIndex = 50
         Me.Label1.Text = "Scale 1 Name :"
         '
@@ -638,7 +663,7 @@ Partial Class System_Setup
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(103, 416)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(160, 25)
+        Me.Label4.Size = New System.Drawing.Size(130, 20)
         Me.Label4.TabIndex = 51
         Me.Label4.Text = "Scale 2 Name :"
         '
@@ -646,14 +671,14 @@ Partial Class System_Setup
         '
         Me.txtScale1Name.Location = New System.Drawing.Point(239, 381)
         Me.txtScale1Name.Name = "txtScale1Name"
-        Me.txtScale1Name.Size = New System.Drawing.Size(254, 30)
+        Me.txtScale1Name.Size = New System.Drawing.Size(254, 26)
         Me.txtScale1Name.TabIndex = 52
         '
         'txtScale2Name
         '
         Me.txtScale2Name.Location = New System.Drawing.Point(239, 413)
         Me.txtScale2Name.Name = "txtScale2Name"
-        Me.txtScale2Name.Size = New System.Drawing.Size(254, 30)
+        Me.txtScale2Name.Size = New System.Drawing.Size(254, 26)
         Me.txtScale2Name.TabIndex = 53
         '
         'Comm_PortComboBox2
@@ -661,7 +686,7 @@ Partial Class System_Setup
         Me.Comm_PortComboBox2.FormattingEnabled = True
         Me.Comm_PortComboBox2.Location = New System.Drawing.Point(640, 411)
         Me.Comm_PortComboBox2.Name = "Comm_PortComboBox2"
-        Me.Comm_PortComboBox2.Size = New System.Drawing.Size(73, 33)
+        Me.Comm_PortComboBox2.Size = New System.Drawing.Size(73, 28)
         Me.Comm_PortComboBox2.TabIndex = 55
         '
         'Comm_PortComboBox3
@@ -669,16 +694,132 @@ Partial Class System_Setup
         Me.Comm_PortComboBox3.FormattingEnabled = True
         Me.Comm_PortComboBox3.Location = New System.Drawing.Point(684, 176)
         Me.Comm_PortComboBox3.Name = "Comm_PortComboBox3"
-        Me.Comm_PortComboBox3.Size = New System.Drawing.Size(116, 33)
+        Me.Comm_PortComboBox3.Size = New System.Drawing.Size(116, 28)
         Me.Comm_PortComboBox3.TabIndex = 57
+        '
+        'ckAllowEmail
+        '
+        Me.ckAllowEmail.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.SetupBindingSource, "AllowEmail", True))
+        Me.ckAllowEmail.Location = New System.Drawing.Point(215, 526)
+        Me.ckAllowEmail.Name = "ckAllowEmail"
+        Me.ckAllowEmail.Size = New System.Drawing.Size(22, 24)
+        Me.ckAllowEmail.TabIndex = 59
+        '
+        'pnlEmail
+        '
+        Me.pnlEmail.Controls.Add(Me.TextBox1)
+        Me.pnlEmail.Controls.Add(Me.Label11)
+        Me.pnlEmail.Controls.Add(Me.txtSmtpPass)
+        Me.pnlEmail.Controls.Add(Me.txtSmtpUser)
+        Me.pnlEmail.Controls.Add(Me.numSMTPPort)
+        Me.pnlEmail.Controls.Add(Me.txtSMTPServer)
+        Me.pnlEmail.Controls.Add(Me.Label10)
+        Me.pnlEmail.Controls.Add(Me.Label9)
+        Me.pnlEmail.Controls.Add(Me.Label8)
+        Me.pnlEmail.Controls.Add(Me.Label7)
+        Me.pnlEmail.Location = New System.Drawing.Point(235, 526)
+        Me.pnlEmail.Name = "pnlEmail"
+        Me.pnlEmail.Size = New System.Drawing.Size(565, 159)
+        Me.pnlEmail.TabIndex = 60
+        Me.pnlEmail.Visible = False
+        '
+        'txtSmtpPass
+        '
+        Me.txtSmtpPass.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "SMTPPass", True))
+        Me.txtSmtpPass.Location = New System.Drawing.Point(123, 73)
+        Me.txtSmtpPass.Name = "txtSmtpPass"
+        Me.txtSmtpPass.Size = New System.Drawing.Size(411, 26)
+        Me.txtSmtpPass.TabIndex = 7
+        '
+        'txtSmtpUser
+        '
+        Me.txtSmtpUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "SMTPUser", True))
+        Me.txtSmtpUser.Location = New System.Drawing.Point(123, 43)
+        Me.txtSmtpUser.Name = "txtSmtpUser"
+        Me.txtSmtpUser.Size = New System.Drawing.Size(411, 26)
+        Me.txtSmtpUser.TabIndex = 6
+        '
+        'numSMTPPort
+        '
+        Me.numSMTPPort.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.SetupBindingSource, "SMTPPort", True))
+        Me.numSMTPPort.Location = New System.Drawing.Point(449, 7)
+        Me.numSMTPPort.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
+        Me.numSMTPPort.Name = "numSMTPPort"
+        Me.numSMTPPort.Size = New System.Drawing.Size(85, 26)
+        Me.numSMTPPort.TabIndex = 5
+        Me.numSMTPPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txtSMTPServer
+        '
+        Me.txtSMTPServer.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "SMTPServer", True))
+        Me.txtSMTPServer.Location = New System.Drawing.Point(123, 7)
+        Me.txtSMTPServer.Name = "txtSMTPServer"
+        Me.txtSMTPServer.Size = New System.Drawing.Size(253, 26)
+        Me.txtSMTPServer.TabIndex = 4
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(16, 76)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(105, 20)
+        Me.Label10.TabIndex = 3
+        Me.Label10.Text = "SMTP Pass:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(17, 46)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(104, 20)
+        Me.Label9.TabIndex = 2
+        Me.Label9.Text = "SMTP User:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(401, 10)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(47, 20)
+        Me.Label8.TabIndex = 1
+        Me.Label8.Text = "Port:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(3, 9)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(118, 20)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "SMTP Server:"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SetupBindingSource, "SMTPFromEmail", True))
+        Me.TextBox1.Location = New System.Drawing.Point(123, 105)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(411, 26)
+        Me.TextBox1.TabIndex = 9
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(16, 108)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(104, 20)
+        Me.Label11.TabIndex = 8
+        Me.Label11.Text = "From Email:"
         '
         'System_Setup
         '
         Me.AcceptButton = Me.OK_Button
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(833, 622)
+        Me.ClientSize = New System.Drawing.Size(833, 794)
+        Me.Controls.Add(Me.pnlEmail)
+        Me.Controls.Add(Label6)
+        Me.Controls.Add(Me.ckAllowEmail)
         Me.Controls.Add(Me.Comm_PortComboBox3)
         Me.Controls.Add(Label5)
         Me.Controls.Add(Comm_PortLabel2)
@@ -752,6 +893,9 @@ Partial Class System_Setup
         CType(Me.Station_NumberNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Ticket_Copies_Per_PageNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Ticket_CopiesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlEmail.ResumeLayout(False)
+        Me.pnlEmail.PerformLayout()
+        CType(Me.numSMTPPort, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -798,4 +942,16 @@ Partial Class System_Setup
     Friend WithEvents txtScale2Name As TextBox
     Friend WithEvents Comm_PortComboBox2 As ComboBox
     Friend WithEvents Comm_PortComboBox3 As ComboBox
+    Friend WithEvents ckAllowEmail As CheckBox
+    Friend WithEvents pnlEmail As Panel
+    Friend WithEvents txtSmtpPass As TextBox
+    Friend WithEvents txtSmtpUser As TextBox
+    Friend WithEvents numSMTPPort As NumericUpDown
+    Friend WithEvents txtSMTPServer As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label11 As Label
 End Class

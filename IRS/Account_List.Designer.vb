@@ -22,41 +22,43 @@ Partial Class Account_List
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Account_List))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.AccountBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.AccountBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.IRS_ScaleDataSet = New IRS.IRS_ScaleDataSet
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton
-        Me.tsEdit = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton
-        Me.AccountBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel
-        Me.cboAccount = New System.Windows.Forms.ToolStripComboBox
-        Me.AccountDataGridView = New System.Windows.Forms.DataGridView
+        Me.IRS_ScaleDataSet = New IRS.IRS_ScaleDataSet()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.tsEdit = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+        Me.AccountBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.cboAccount = New System.Windows.Forms.ToolStripComboBox()
+        Me.AccountDataGridView = New System.Windows.Forms.DataGridView()
         Me.HaulerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.AccountTableAdapter = New IRS.IRS_ScaleDataSetTableAdapters.AccountTableAdapter
-        Me.HaulerTableAdapter = New IRS.IRS_ScaleDataSetTableAdapters.HaulerTableAdapter
-        Me.EditBtn = New System.Windows.Forms.DataGridViewButtonColumn
-        Me.Account_Name = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Show_Price = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.Show_Price_On_Ticket = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.Default_Hauler = New System.Windows.Forms.DataGridViewComboBoxColumn
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.AccountTableAdapter = New IRS.IRS_ScaleDataSetTableAdapters.AccountTableAdapter()
+        Me.HaulerTableAdapter = New IRS.IRS_ScaleDataSetTableAdapters.HaulerTableAdapter()
+        Me.EditBtn = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Account_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Show_Price = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Show_Price_On_Ticket = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Default_Hauler = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Email_Ticket = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.AccountBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AccountBindingNavigator.SuspendLayout()
         CType(Me.AccountBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -224,7 +226,7 @@ Partial Class Account_List
         Me.AccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.AccountDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.AccountDataGridView.ColumnHeadersHeight = 45
-        Me.AccountDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EditBtn, Me.Account_Name, Me.Show_Price, Me.Show_Price_On_Ticket, Me.Default_Hauler})
+        Me.AccountDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EditBtn, Me.Account_Name, Me.Show_Price, Me.Show_Price_On_Ticket, Me.Default_Hauler, Me.Email_Ticket, Me.Email})
         Me.AccountDataGridView.DataSource = Me.AccountBindingSource
         Me.AccountDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AccountDataGridView.Location = New System.Drawing.Point(0, 92)
@@ -306,39 +308,43 @@ Partial Class Account_List
         '
         'EditBtn
         '
-        Me.EditBtn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.EditBtn.DataPropertyName = "EditBtn"
         Me.EditBtn.FillWeight = 20.0!
         Me.EditBtn.HeaderText = ""
+        Me.EditBtn.MinimumWidth = 55
         Me.EditBtn.Name = "EditBtn"
         Me.EditBtn.ReadOnly = True
+        Me.EditBtn.Width = 55
         '
         'Account_Name
         '
         Me.Account_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Account_Name.DataPropertyName = "Account_Name"
         Me.Account_Name.HeaderText = "Customer Name"
+        Me.Account_Name.MinimumWidth = 150
         Me.Account_Name.Name = "Account_Name"
         '
         'Show_Price
         '
-        Me.Show_Price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Show_Price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Show_Price.DataPropertyName = "Show_Price"
         Me.Show_Price.FillWeight = 50.0!
         Me.Show_Price.HeaderText = "Show Price"
         Me.Show_Price.Name = "Show_Price"
+        Me.Show_Price.Width = 94
         '
         'Show_Price_On_Ticket
         '
-        Me.Show_Price_On_Ticket.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Show_Price_On_Ticket.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Show_Price_On_Ticket.DataPropertyName = "Show_Price_On_Ticket"
         Me.Show_Price_On_Ticket.FillWeight = 50.0!
         Me.Show_Price_On_Ticket.HeaderText = "Show Price On Ticket"
         Me.Show_Price_On_Ticket.Name = "Show_Price_On_Ticket"
+        Me.Show_Price_On_Ticket.Width = 123
         '
         'Default_Hauler
         '
-        Me.Default_Hauler.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Default_Hauler.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Default_Hauler.DataPropertyName = "Default_Hauler"
         Me.Default_Hauler.DataSource = Me.HaulerBindingSource
         Me.Default_Hauler.DisplayMember = "Hauler_Name"
@@ -346,6 +352,24 @@ Partial Class Account_List
         Me.Default_Hauler.Name = "Default_Hauler"
         Me.Default_Hauler.ValueMember = "Hauler_Name"
         Me.Default_Hauler.Visible = False
+        Me.Default_Hauler.Width = 119
+        '
+        'Email_Ticket
+        '
+        Me.Email_Ticket.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Email_Ticket.DataPropertyName = "Email_Ticket"
+        Me.Email_Ticket.HeaderText = "Email Ticket"
+        Me.Email_Ticket.Name = "Email_Ticket"
+        Me.Email_Ticket.Width = 101
+        '
+        'Email
+        '
+        Me.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Email.DataPropertyName = "Email"
+        Me.Email.HeaderText = "Email"
+        Me.Email.MinimumWidth = 300
+        Me.Email.Name = "Email"
+        Me.Email.Width = 300
         '
         'Account_List
         '
@@ -404,9 +428,11 @@ Partial Class Account_List
     Friend WithEvents cboAccount As System.Windows.Forms.ToolStripComboBox
     Friend WithEvents HaulerBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents HaulerTableAdapter As IRS.IRS_ScaleDataSetTableAdapters.HaulerTableAdapter
-    Friend WithEvents EditBtn As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents Account_Name As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Show_Price As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents Show_Price_On_Ticket As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents Default_Hauler As System.Windows.Forms.DataGridViewComboBoxColumn
+    Friend WithEvents EditBtn As DataGridViewButtonColumn
+    Friend WithEvents Account_Name As DataGridViewTextBoxColumn
+    Friend WithEvents Show_Price As DataGridViewCheckBoxColumn
+    Friend WithEvents Show_Price_On_Ticket As DataGridViewCheckBoxColumn
+    Friend WithEvents Default_Hauler As DataGridViewComboBoxColumn
+    Friend WithEvents Email_Ticket As DataGridViewCheckBoxColumn
+    Friend WithEvents Email As DataGridViewTextBoxColumn
 End Class

@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("IRS")>
-<Assembly: AssemblyDescription("Converted Ticket Numbers from String to Integer / Removed Archive Button")>
-<Assembly: AssemblyCompany("Total Scale Service inc.")> 
-<Assembly: AssemblyProduct("IRS")> 
+<Assembly: AssemblyTitle("PC-Gravel")>
+<Assembly: AssemblyDescription("Windows Application Gravel Program")>
+<Assembly: AssemblyCompany("Total Scale Service inc.")>
+<Assembly: AssemblyProduct("PC-Gravel")>
 <Assembly: AssemblyCopyright("Copyright ©  2010 Total Scale Service inc.")> 
 <Assembly: AssemblyTrademark("")> 
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2.4.0.3")>
-<Assembly: AssemblyFileVersion("2.4.0.3")>
+<Assembly: AssemblyVersion("2.5.0.3")>
+<Assembly: AssemblyFileVersion("2.5.0.3")>

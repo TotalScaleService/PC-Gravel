@@ -13,8 +13,13 @@ Public Class Account_List
     End Sub
 
     Private Sub Account_List_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'IRS_ScaleDataSet.Hauler' table. You can move, or remove it, as needed.
+
         Me.HaulerTableAdapter.Fill(Me.IRS_ScaleDataSet.Hauler)
+        Dim systemSetup As New Setup()
+        If systemSetup.SetupItems.AllowEmail = False Then
+            AccountDataGridView.Columns("Email_Ticket").Visible = False
+            AccountDataGridView.Columns("Email").Visible = False
+        End If
         Dim HRow As IRS_ScaleDataSet.HaulerRow = Me.IRS_ScaleDataSet.Hauler.NewHaulerRow
         HRow.Hauler_Name = ""
         Me.IRS_ScaleDataSet.Hauler.AddHaulerRow(HRow)

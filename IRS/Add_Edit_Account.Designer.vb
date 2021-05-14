@@ -34,6 +34,7 @@ Partial Class Add_Edit_Account
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Add_Edit_Account))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim Label1 As System.Windows.Forms.Label
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
@@ -78,6 +79,9 @@ Partial Class Add_Edit_Account
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewCheckBoxColumn1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.ProductTableAdapter = New IRS.IRS_ScaleDataSetTableAdapters.ProductTableAdapter()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Account_NameLabel = New System.Windows.Forms.Label()
         PhoneLabel = New System.Windows.Forms.Label()
         AddressLabel = New System.Windows.Forms.Label()
@@ -86,6 +90,7 @@ Partial Class Add_Edit_Account
         ZipLabel = New System.Windows.Forms.Label()
         TermsLabel = New System.Windows.Forms.Label()
         TaxableLabel = New System.Windows.Forms.Label()
+        Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.AccountBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AccountBindingNavigator.SuspendLayout()
@@ -97,6 +102,7 @@ Partial Class Add_Edit_Account
         CType(Me.AccountProductsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AccountProductsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Account_NameLabel
@@ -187,7 +193,7 @@ Partial Class Add_Edit_Account
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(435, 595)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(444, 645)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(5)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -231,7 +237,7 @@ Partial Class Add_Edit_Account
         Me.AccountBindingNavigator.Name = "AccountBindingNavigator"
         Me.AccountBindingNavigator.Padding = New System.Windows.Forms.Padding(0, 0, 2, 0)
         Me.AccountBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.AccountBindingNavigator.Size = New System.Drawing.Size(701, 25)
+        Me.AccountBindingNavigator.Size = New System.Drawing.Size(710, 25)
         Me.AccountBindingNavigator.TabIndex = 1
         Me.AccountBindingNavigator.Text = "BindingNavigator1"
         '
@@ -471,7 +477,7 @@ Partial Class Add_Edit_Account
         Me.lblPrompt.Dock = System.Windows.Forms.DockStyle.Top
         Me.lblPrompt.Location = New System.Drawing.Point(0, 25)
         Me.lblPrompt.Name = "lblPrompt"
-        Me.lblPrompt.Size = New System.Drawing.Size(701, 51)
+        Me.lblPrompt.Size = New System.Drawing.Size(710, 51)
         Me.lblPrompt.TabIndex = 17
         Me.lblPrompt.Text = "Edit Customer Information"
         Me.lblPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -491,7 +497,7 @@ Partial Class Add_Edit_Account
         Me.AccountProductsDataGridView.ColumnHeadersHeight = 50
         Me.AccountProductsDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewCheckBoxColumn1})
         Me.AccountProductsDataGridView.DataSource = Me.AccountProductsBindingSource
-        Me.AccountProductsDataGridView.Location = New System.Drawing.Point(51, 317)
+        Me.AccountProductsDataGridView.Location = New System.Drawing.Point(52, 381)
         Me.AccountProductsDataGridView.Name = "AccountProductsDataGridView"
         Me.AccountProductsDataGridView.Size = New System.Drawing.Size(609, 256)
         Me.AccountProductsDataGridView.TabIndex = 19
@@ -543,13 +549,57 @@ Partial Class Add_Edit_Account
         '
         Me.ProductTableAdapter.ClearBeforeFill = True
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.AccountBindingSource, "Email_Ticket", True))
+        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.CheckBox1.Location = New System.Drawing.Point(77, 334)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.CheckBox1.Size = New System.Drawing.Size(105, 19)
+        Me.CheckBox1.TabIndex = 20
+        Me.CheckBox1.Text = "Email Ticket"
+        Me.CheckBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Label1)
+        Me.Panel1.Location = New System.Drawing.Point(188, 318)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(473, 44)
+        Me.Panel1.TabIndex = 21
+        Me.Panel1.Visible = False
+        '
+        'Label1
+        '
+        Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label1.Location = New System.Drawing.Point(3, 11)
+        Label1.Name = "Label1"
+        Label1.Size = New System.Drawing.Size(56, 20)
+        Label1.TabIndex = 16
+        Label1.Text = "Email:"
+        Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TextBox1
+        '
+        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AccountBindingSource, "Email", True))
+        Me.TextBox1.Location = New System.Drawing.Point(54, 9)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(399, 26)
+        Me.TextBox1.TabIndex = 17
+        '
         'Add_Edit_Account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(701, 664)
+        Me.ClientSize = New System.Drawing.Size(710, 714)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.AccountProductsDataGridView)
         Me.Controls.Add(PhoneLabel)
         Me.Controls.Add(Account_NameLabel)
@@ -591,6 +641,8 @@ Partial Class Add_Edit_Account
         CType(Me.AccountProductsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AccountProductsDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -639,5 +691,7 @@ Partial Class Add_Edit_Account
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewCheckBoxColumn1 As System.Windows.Forms.DataGridViewCheckBoxColumn
-
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents TextBox1 As TextBox
 End Class

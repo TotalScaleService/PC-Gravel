@@ -35,6 +35,7 @@ Public Class Weigh_Ticket
     'Dim Logger As New ErrorLog.LogError
 
 
+
     Private Sub FillTables()
 
         Me.ProductTableAdapter.Fill(Me.IRS_ScaleDataSet.Product)
@@ -243,7 +244,7 @@ Public Class Weigh_Ticket
                     Me.Job_NameComboBox.Enabled = True
                 End If
                 If Not Me.TransactionRow.IsJob_DescriptionNull Then Me.Description_Textbox.Text = Me.TransactionRow.Job_Description
-
+                SetEmailButton()
             End If
 
             'Comment
@@ -376,6 +377,7 @@ Public Class Weigh_Ticket
                 End If
                 Me.JobTableAdapter.Update(Me.IRS_ScaleDataSet.Job)
             End If
+            SetEmailButton()
         Catch ex As Exception
             MsgBox("Error Saving Job Information " + ex.Message)
         End Try
@@ -422,6 +424,7 @@ Public Class Weigh_Ticket
                     Me.Account_NameComboBox.SelectedIndex = Me.Account_NameComboBox.FindStringExact(row.Account_Name)
                     If Not row.IsJob_NameNull Then
                         Me.Job_NameComboBox.SelectedIndex = Me.Job_NameComboBox.FindStringExact(row.Job_Name)
+                        SetEmailButton()
                     Else
                         Me.Job_NameComboBox.SelectedIndex = -1
                     End If
@@ -458,6 +461,7 @@ Public Class Weigh_Ticket
                 If Me.ProductSet = False Then Me.Product_NameComboBox.SelectedIndex = -1
             End If
         End If
+
     End Sub
 
     Private Sub Job_NameComboBox_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Job_NameComboBox.TextChanged
@@ -1200,7 +1204,11 @@ Public Class Weigh_Ticket
 
     End Sub
 
-    Private Function Print_Ticket(ByVal Print As Boolean, ByVal Receipt As Boolean) As DialogResult
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnEmailSave.Click
+        Print_Ticket(True, False, True)
+    End Sub
+
+    Private Function Print_Ticket(ByVal Print As Boolean, ByVal Receipt As Boolean, Optional EmailOnly As Boolean = False) As DialogResult
 
         'Logger.Save(" ")
         'Logger.Save("Hold/Print Ticket entered @" + DateTime.Now.ToString)
@@ -1386,6 +1394,8 @@ Public Class Weigh_Ticket
                     ticketRpt.Load("Reports\Ticket.rpt")
                 End If
 
+
+
                 Me.JobTotalsByAccount_ByDateTableAdapter.FillByJobProduct(Me.IRS_ScaleDataSet.JobTotalsByAccount_ByDate, Now, Now, Me.TransactionRow.Job_Name, Me.TransactionRow.Account_Name, Me.TransactionRow.Product_Name)
                 Me.JobTotalsByAccountTableAdapter.FillByJobProduct(Me.IRS_ScaleDataSet.JobTotalsByAccount, Me.TransactionRow.Job_Name, Me.TransactionRow.Account_Name, Me.TransactionRow.Product_Name)
                 Me.TransactionsTableAdapter.FillByTicket(Me.IRS_ScaleDataSet.Transactions, Me.TransactionRow.Ticket)
@@ -1428,8 +1438,11 @@ Public Class Weigh_Ticket
 
                         End Try
 
-                        ticketRpt.PrintToPrinter(My.Forms.MDIParent.Setup.SetupItems.Ticket_Copies, True, 0, 0)
+                        If Not EmailOnly Then ticketRpt.PrintToPrinter(My.Forms.MDIParent.Setup.SetupItems.Ticket_Copies, True, 0, 0)
+                        If My.Forms.MDIParent.Setup.SetupItems.AllowEmail Then
 
+                            Email.EmailTicket(TransactionRow)
+                        End If
                         'Dim PrintReportOptions As New CrystalDecisions.ReportAppServer.Controllers.PrintReportOptions
                         ''ticketRpt.Report.PrintOptions.PrinterName = My.Forms.MDIParent.Setup.SetupItems.Ticket_Printer.ToString
                         'Dim PrintOutputController As New CrystalDecisions.ReportAppServer.Controllers.PrintOutputController
@@ -2475,8 +2488,27 @@ Public Class Weigh_Ticket
     End Sub
 
     Private Sub Account_NameComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Account_NameComboBox.SelectedIndexChanged
+        SetEmailButton()
+    End Sub
+
+    Public Sub SetEmailButton()
+        If Me.Account_NameComboBox.SelectedIndex = -1 Then
+            btnEmailSave.Visible = False
+        Else
+            Dim row As IRS_ScaleDataSet.AccountRow
+            row = CType(CType(Me.AccountBindingSource.Current, DataRowView).Row, IRS_ScaleDataSet.AccountRow)
+            If Not row Is Nothing Then
+                If IRS_ScaleDataSet.Setup.Count > 0 Then
+                    btnEmailSave.Visible = row.Email_Ticket And IRS_ScaleDataSet.Setup(0).AllowEmail = True
+                End If
+            Else
+                btnEmailSave.Visible = False
+            End If
+        End If
 
     End Sub
+
+
 
     Private Sub SaveAccountPrice()
 

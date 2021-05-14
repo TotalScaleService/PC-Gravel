@@ -111,6 +111,7 @@ Partial Class Weigh_Ticket
         Me.Delivery_Flat_RateCheckBox = New System.Windows.Forms.CheckBox()
         Me.Delivery_RateTextBox = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnEmailSave = New System.Windows.Forms.Button()
         Me.Print_Receipt_Button = New System.Windows.Forms.Button()
         Me.btnSaveTicket = New System.Windows.Forms.Button()
         Me.lblButtonPrompt = New System.Windows.Forms.Label()
@@ -1147,6 +1148,7 @@ Partial Class Weigh_Ticket
         'GroupBox1
         '
         Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.GroupBox1.Controls.Add(Me.btnEmailSave)
         Me.GroupBox1.Controls.Add(Me.Print_Receipt_Button)
         Me.GroupBox1.Controls.Add(Me.btnSaveTicket)
         Me.GroupBox1.Controls.Add(Me.lblButtonPrompt)
@@ -1160,6 +1162,18 @@ Partial Class Weigh_Ticket
         Me.GroupBox1.Size = New System.Drawing.Size(423, 161)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
+        '
+        'btnEmailSave
+        '
+        Me.btnEmailSave.BackColor = System.Drawing.SystemColors.Control
+        Me.btnEmailSave.Location = New System.Drawing.Point(19, 74)
+        Me.btnEmailSave.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnEmailSave.Name = "btnEmailSave"
+        Me.btnEmailSave.Size = New System.Drawing.Size(124, 52)
+        Me.btnEmailSave.TabIndex = 16
+        Me.btnEmailSave.Text = "&Email/Save Ticket"
+        Me.btnEmailSave.UseVisualStyleBackColor = False
+        Me.btnEmailSave.Visible = False
         '
         'Print_Receipt_Button
         '
@@ -1438,4 +1452,5 @@ Partial Class Weigh_Ticket
     Friend WithEvents txtDriver As System.Windows.Forms.TextBox
     Friend WithEvents Driver_Label As System.Windows.Forms.Label
     Friend WithEvents Print_Receipt_Button As Button
+    Friend WithEvents btnEmailSave As Button
 End Class
