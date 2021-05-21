@@ -2488,7 +2488,6 @@ Public Class Weigh_Ticket
     End Sub
 
     Private Sub Account_NameComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Account_NameComboBox.SelectedIndexChanged
-        SetEmailButton()
     End Sub
 
     Public Sub SetEmailButton()
@@ -2508,7 +2507,10 @@ Public Class Weigh_Ticket
 
     End Sub
 
+    Private Sub AccountBindingSource_PositionChanged(sender As Object, e As EventArgs) Handles AccountBindingSource.PositionChanged
+        SetEmailButton()
 
+    End Sub
 
     Private Sub SaveAccountPrice()
 

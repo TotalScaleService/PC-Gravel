@@ -78,8 +78,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=.\;Initial Catalog=IRS_Scale;Persist Security Info=True;User ID=sa;Pa"& _ 
-            "ssword=Scale_Us3r")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=MSI\SQL2017;Initial Catalog=IRS_Scale;Persist Security Info=True;User"& _ 
+            " ID=sa;Password=truckscale")>  _
         Public ReadOnly Property IRS_ScaleConnectionString() As String
             Get
                 Return CType(Me("IRS_ScaleConnectionString"),String)

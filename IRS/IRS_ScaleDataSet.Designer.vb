@@ -5295,8 +5295,6 @@ Partial Public Class IRS_ScaleDataSet
             Me.columnEditBtn.ReadOnly = true
             Me.columnEditBtn.MaxLength = 4
             Me.columnShow_Price_On_Ticket.DefaultValue = CType(true,Boolean)
-            Me.columnEmail_Ticket.AllowDBNull = false
-            Me.columnEmail.AllowDBNull = false
             Me.columnEmail.MaxLength = 255
         End Sub
         
@@ -12543,7 +12541,11 @@ Partial Public Class IRS_ScaleDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property Email_Ticket() As Boolean
             Get
-                Return CType(Me(Me.tableAccount.Email_TicketColumn),Boolean)
+                Try 
+                    Return CType(Me(Me.tableAccount.Email_TicketColumn),Boolean)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Email_Ticket' in table 'Account' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableAccount.Email_TicketColumn) = value
@@ -12554,7 +12556,11 @@ Partial Public Class IRS_ScaleDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property Email() As String
             Get
-                Return CType(Me(Me.tableAccount.EmailColumn),String)
+                Try 
+                    Return CType(Me(Me.tableAccount.EmailColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Email' in table 'Account' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableAccount.EmailColumn) = value
@@ -12702,6 +12708,30 @@ Partial Public Class IRS_ScaleDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetShow_Price_On_TicketNull()
             Me(Me.tableAccount.Show_Price_On_TicketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsEmail_TicketNull() As Boolean
+            Return Me.IsNull(Me.tableAccount.Email_TicketColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetEmail_TicketNull()
+            Me(Me.tableAccount.Email_TicketColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsEmailNull() As Boolean
+            Return Me.IsNull(Me.tableAccount.EmailColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetEmailNull()
+            Me(Me.tableAccount.EmailColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -20623,7 +20653,7 @@ Namespace IRS_ScaleDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Boolean, ByVal Email As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Global.System.Nullable(Of Boolean), ByVal Email As String) As Integer
             If (Account_Name Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Account_Name")
             Else
@@ -20679,9 +20709,13 @@ Namespace IRS_ScaleDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.InsertCommand.Parameters(11).Value = CType(Email_Ticket,Boolean)
+            If (Email_Ticket.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(11).Value = CType(Email_Ticket.Value,Boolean)
+            Else
+                Me.Adapter.InsertCommand.Parameters(11).Value = Global.System.DBNull.Value
+            End If
             If (Email Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Email")
+                Me.Adapter.InsertCommand.Parameters(12).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(12).Value = CType(Email,String)
             End If
@@ -20704,7 +20738,7 @@ Namespace IRS_ScaleDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Boolean, ByVal Email As String, ByVal Original_Account_Name As String) As Integer
+        Public Overloads Overridable Function Update(ByVal Account_Name As String, ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Global.System.Nullable(Of Boolean), ByVal Email As String, ByVal Original_Account_Name As String) As Integer
             If (Account_Name Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Account_Name")
             Else
@@ -20760,9 +20794,13 @@ Namespace IRS_ScaleDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Email_Ticket,Boolean)
+            If (Email_Ticket.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Email_Ticket.Value,Boolean)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
+            End If
             If (Email Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Email")
+                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Email,String)
             End If
@@ -20790,7 +20828,7 @@ Namespace IRS_ScaleDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Boolean, ByVal Email As String, ByVal Original_Account_Name As String) As Integer
+        Public Overloads Overridable Function Update(ByVal Phone As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Terms As String, ByVal Taxable As Global.System.Nullable(Of Boolean), ByVal Show_Price As Global.System.Nullable(Of Boolean), ByVal Default_Hauler As String, ByVal Show_Price_On_Ticket As Global.System.Nullable(Of Boolean), ByVal Email_Ticket As Global.System.Nullable(Of Boolean), ByVal Email As String, ByVal Original_Account_Name As String) As Integer
             Return Me.Update(Original_Account_Name, Phone, Address, City, State, Zip, Terms, Taxable, Show_Price, Default_Hauler, Show_Price_On_Ticket, Email_Ticket, Email, Original_Account_Name)
         End Function
     End Class
